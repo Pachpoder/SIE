@@ -27,17 +27,21 @@ const Hero = () => {
                         <div className="container">
                             <div className="row">
                                 <div className="col col-lg-6 col-md-8 col-sm-12 slide-caption">
-                                    <div className="slide-title-sub">
-                                        <h5>SIE</h5>
-                                    </div>
                                     <div className="slide-title">
-                                        <h2>Sistema de Información Ejecutiva</h2>
+                                        <h2>Mercafarma</h2>
                                     </div>
                                     <div className="slide-subtitle">
-                                        <p><b>Centralizar</b> la información y <b>facilite</b> la gestión de los procesos, promueva la <b>interacción</b> activa y personalizada entre los empleados, garantizando un entorno seguro y profesional que incremente la productividad de la organizacional.</p>
+                                        <p>Somos una compañía farmacéutica líder en Guatemala, especializada en representar, distribuir y mercadear productos de laboratorios internacionales, garantizando calidad y excelencia en el sector salud.</p>
                                     </div>
                                     <div className="btns">
-                                        <Link to="/about" className="theme-btn">DIRIGIRSE A SIE</Link>
+                                        <a
+                                            href="https://www.mercafarma.com.gt/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="theme-btn"
+                                        >
+                                            DIRIGIRSE A MERCAFARMA
+                                        </a>
                                     </div>
                                     <div className="slider-pic">
                                         <img src={hero1} alt="" />
@@ -51,17 +55,16 @@ const Hero = () => {
                             <div className="row">
                                 <div className="col col-lg-6 col-md-8 col-sm-12 slide-caption">
                                     <div className="slide-title-sub">
-                                        <h5>Trusted Business Partner.</h5>
+                                        <h5>SIE</h5>
                                     </div>
                                     <div className="slide-title">
-                                        <h2>Provide Financial Solution Service.</h2>
+                                        <h2>Sistema de Información Ejecutiva</h2>
                                     </div>
                                     <div className="slide-subtitle">
-                                        <p>It was popularised in the 1960s with the release sheets. We bring the right
-                                            people together</p>
+                                        <p><b>Centralizar</b> la información y <b>facilite</b> la gestión de los procesos, promueva la <b>interacción</b> activa y personalizada entre los empleados, garantizando un entorno seguro y profesional que incremente la productividad de la organizacional.</p>
                                     </div>
                                     <div className="btns">
-                                        <Link to="/about" className="theme-btn">Explore More</Link>
+                                        <Link to="/about" className="theme-btn">DIRIGIRSE A SIE</Link>
                                     </div>
                                     <div className="slider-pic">
                                         <img src={hero2} alt="" />

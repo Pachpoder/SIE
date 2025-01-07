@@ -1,0 +1,8 @@
+.sidebar.show {
+    transform: translateX(0);
+  }
+  
+  .sidebar.hide {
+    transform: translateX(-100%);
+  }
+  

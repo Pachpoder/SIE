@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom'
 import HeaderTopbar from '../HeaderTopbar/HeaderTopbar'
 import MobileMenu from '../MobileMenu/MobileMenu'
 import Logo from '../../images/logo.png'
-import { Extensiones } from '../Extensiones/Extensiones'
+
 import { Typography } from '@material-ui/core'
+import Extensiones from '../Extensiones/Extensiones'
 
 const Header = (props) => {
     const [menuActive, setMenuState] = useState(false);
@@ -28,7 +29,7 @@ const Header = (props) => {
                                     <MobileMenu />
                                 </div>
                             </div>
-                          <Extensiones/>
+                           
                          
                             { /* Colocar aqui componente de hamburguesa, para mostrar el menu de extensiones */}
                             <div className="col-lg-3 col-md-6 col-6">
@@ -36,6 +37,7 @@ const Header = (props) => {
                                     <Link onClick={ClickHandler} className="navbar-brand" to="/home"><img src={Logo}
                                         alt="" /></Link>
                                 </div>
+                                <Extensiones />
                             </div>
                             <div className="col-lg-6 col-md-1 col-1">
                                 <div id="navbar" className="collapse navbar-collapse navigation-holder">
