@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import HeaderTopbar from '../HeaderTopbar/HeaderTopbar'
 import MobileMenu from '../MobileMenu/MobileMenu'
-import Logo from '../../images/logo.png'
+import Logo from '../../images/logo-mercafarma.png'
 
 import { Typography } from '@material-ui/core'
 import Extensiones from '../Extensiones/Extensiones'
@@ -37,6 +37,7 @@ const Header = (props) => {
                                     <Link onClick={ClickHandler} className="navbar-brand" to="/home"><img src={Logo}
                                         alt="" /></Link>
                                 </div>
+                                {/* { Componente de Extensiones} */}
                                 <Extensiones />
                             </div>
                             <div className="col-lg-6 col-md-1 col-1">
@@ -44,29 +45,29 @@ const Header = (props) => {
                                     <button className="menu-close"><i className="ti-close"></i></button>
                                     <ul className="nav navbar-nav mb-2 mb-lg-0">
                                         <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} to="/">Home</Link>
+                                            <Link onClick={ClickHandler} to="/">Inicio</Link>
                                             <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/home">Home style 1</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/home2">Home style 2</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/home">Inicio</Link></li>
+                                                {/* <li><Link onClick={ClickHandler} to="/home2">Home style 2</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/home3">Home style 3</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/home4">Home style 4</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/home5">Home style 5</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/home6">Home style 6</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/home7">Home style 7</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/home7">Home style 7</Link></li> */}
                                             </ul>
                                         </li>
-                                        <li><Link onClick={ClickHandler} to="/about">About Us</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/about">Historia</Link></li>
                                         <li className="menu-item-has-children">
-                                            <Link to="/service">Services</Link>
+                                            <Link to="/service">Valores y politicas</Link>
                                             <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/service">Service Style 1</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/service-s2">Service Style 2</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/service-s3">Service Style 3</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/service-single/1">Service Single</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/service">Misión</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/service-s2">Visión</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/service-s3">Valores</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/service-single/1">Politicas de Calidad</Link></li>
                                             </ul>
                                         </li>
                                         <li className="menu-item-has-children">
-                                            <Link to="/service">Project</Link>
+                                            <Link to="/service">Plataformas</Link>
                                             <ul className="sub-menu">
                                                 <li><Link onClick={ClickHandler} to="/project">Project Style 1</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/project-s2">Project Style 2</Link></li>
@@ -75,7 +76,7 @@ const Header = (props) => {
                                             </ul>
                                         </li>
                                         <li className="menu-item-has-children">
-                                            <Link to="/project">Pages</Link>
+                                            <Link to="/project">Páginas Web</Link>
                                             <ul className="sub-menu">
                                                 <li><Link onClick={ClickHandler} to="/team">Team</Link></li>
                                                 <li><Link onClick={ClickHandler}  to="/team-single/1">Team single</Link></li>
@@ -89,7 +90,11 @@ const Header = (props) => {
                                                 <li><Link onClick={ClickHandler} to="/register">Register</Link></li>
                                             </ul>
                                         </li>
-                                        <li className="menu-item-has-children">
+
+                                        {/* Estos son los demas componentes del navbar comnetados para uso a futuro*/}
+
+
+                                        {/* <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} to="/blog">Blog</Link>
                                             <ul className="sub-menu">
                                                 <li><Link onClick={ClickHandler} to="/blog">Blog right sidebar</Link></li>
@@ -107,8 +112,8 @@ const Header = (props) => {
                                                     </ul>
                                                 </li>
                                             </ul>
-                                        </li>
-                                        <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
+                                        </li> */}
+                                        <li><Link onClick={ClickHandler} to="/contact">Contacto</Link></li>
                                     </ul>
                                 </div>
                             </div>

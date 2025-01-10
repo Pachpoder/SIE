@@ -1,22 +1,22 @@
 const express = require('express');
 const mysql = require('mysql2');
-const cors = require('cors'); // Importar cors
+const cors = require('cors'); 
 
 const app = express();
 const PORT = 5000;
 
-// Configuración de la conexión a la base de datos
+
 const db = mysql.createConnection({
     host: '127.0.0.1',
     user: 'root',
-    password: '1234', // Tu contraseña de MySQL
-    database: 'laravel', // Nombre de tu base de datos
+    password: '12345678', 
+    database: 'laravel', 
 });
 
-// Habilitar CORS para permitir solicitudes desde otros dominios
+
 app.use(cors());
 
-// Verificar conexión a la base de datos
+
 db.connect((err) => {
     if (err) {
         console.error('Error conectando a la base de datos:', err.message);
@@ -25,7 +25,6 @@ db.connect((err) => {
     }
 });
 
-// Ruta para obtener extensiones con departamentos
 app.get('/extensiones', (req, res) => {
     const query = `
         SELECT 
@@ -53,7 +52,6 @@ app.get('/extensiones', (req, res) => {
     });
 });
 
-// Iniciar el servidor
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });

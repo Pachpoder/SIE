@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import PhoneIcon from "@material-ui/icons/Phone"; // Importar ícono de teléfono
 import "../../css/animations.css"; // Archivo CSS para las animaciones
 
 const Extensiones = () => {
@@ -63,29 +64,41 @@ const Extensiones = () => {
   const styles = {
     button: {
       position: "fixed",
-      top: "10px",
-      left: "10px",
+      top: "50%", // Centrado verticalmente
+      right: "10px", // Botón pegado al lado derecho
+      transform: "translateY(-50%)", // Ajuste para centrar completamente
       zIndex: 1000,
-      backgroundColor: "green",
+      backgroundColor: "#0056b3", // Color azul adaptado al diseño
       color: "white",
       border: "none",
-      padding: "10px 20px",
+      padding: "15px",
+      borderRadius: "50%", // Forma circular
+      boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.2)",
       cursor: "pointer",
-      borderRadius: "5px",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
       fontSize: "16px",
+      transition: "background-color 0.3s, transform 0.3s", // Animaciones suaves
+    },
+    buttonHover: {
+      backgroundColor: "#003f7f", // Color al pasar el mouse
+      transform: "scale(1.1)", // Escalar al pasar el mouse
+    },
+    icon: {
+      fontSize: "24px", // Tamaño del ícono
     },
     sidebar: {
       position: "fixed",
       top: 0,
-      left: 0,
+      left: showSidebar ? 0 : "-350px", // Mostrar desde el lado izquierdo
       height: "100%",
       width: "350px",
       backgroundColor: "#fefefe",
       zIndex: 999,
       overflowY: "auto",
       padding: "20px",
-      transition: "transform 0.3s ease-in-out",
-      transform: showSidebar ? "translateX(0)" : "translateX(-100%)",
+      transition: "left 0.3s ease-in-out", // Animación suave al abrir/cerrar
       boxShadow: "0px 2px 10px rgba(0, 0, 0, 0.1)",
     },
     closeButton: {
@@ -164,8 +177,11 @@ const Extensiones = () => {
   return (
     <div>
       {!showSidebar && (
-        <button style={styles.button} onClick={toggleSidebar}>
-          Extensiones
+        <button
+          style={styles.button}
+          onClick={toggleSidebar}
+        >
+          <PhoneIcon style={styles.icon} />
         </button>
       )}
 
@@ -211,9 +227,6 @@ const Extensiones = () => {
                           <p style={styles.cardText}>
                             <span style={styles.label}>Correo:</span> {extension.correo}
                           </p>
-                          {/* <p style={styles.cardText}>
-                            <span style={styles.label}>Dependencia:</span> {extension.dependencia}
-                          </p> */}
                           <p style={styles.cardText}>
                             <span style={styles.label}>Departamento:</span> {extension.departamento || "Sin asignar"}
                           </p>
