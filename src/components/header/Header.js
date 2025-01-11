@@ -138,7 +138,7 @@ const Header = (props) => {
 
                                     <div className="close-form">
                                         <Link onClick={ClickHandler} className="theme-btn" to="/contact">
-                                            Contact Us</Link>
+                                        Contactanos</Link>
                                     </div>
                                 </div>
                             </div>

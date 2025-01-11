@@ -184,7 +184,9 @@
 .hero-style-1 {
 	height: 1000px;
 	position: relative;
-    background: #ab281f;
+    background: #14212b;
+	
+
 
 	@include media-query(1199px) {
 		height: 750px;

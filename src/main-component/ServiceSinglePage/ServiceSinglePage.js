@@ -11,7 +11,125 @@ import Footer2 from '../../components/footer2/Footer2';
 const ServiceSinglePage = (props) => {
     const { id } = useParams()
 
+    const textoParrafo = validateId(id);
+
     const serviceDetails = Services.find(item => item.Id === id)
+
+    function validateId(id) {
+        switch (parseInt(id, 10)) { // Asegúrate de convertir 'id' a número si es necesario
+            case 1:
+                return (
+                    <>
+                    <p>Desarrollar una eficiente gestión, producto, de la aplicación de principios y valores bíblicos y empresariales, que nos comprometen con pasión a desarrollar los productos de alta calidad que garanticen la satisfacción de nuestros clientes.</p>
+                    <h3>Principios y Valores</h3>
+                    <ul style={{
+                        display: 'grid',
+                        gridTemplateColumns: '1fr 1fr', // Dividir en dos columnas
+                        columnGap: '20px',             // Espaciado entre columnas
+                        listStyleType: 'none',         // Quitar estilo de lista predeterminado
+                        padding: '0',
+                        margin: '0'
+                    }}>
+                        {[
+                            'Temor de Dios',
+                            'Integridad',
+                            'Respeto',
+                            'Liderazgo',
+                            'Excelencia',
+                            'Innovación',
+                            'Confianza',
+                            'Pasión por nuestros clientes'
+                        ].map((item, index) => (
+                            <li key={index} style={{
+                                position: 'relative',
+                                paddingLeft: '20px',  // Espaciado para el punto
+                                marginBottom: '10px'  // Separación entre líneas
+                            }}>
+                                <span style={{
+                                    position: 'absolute',
+                                    left: '0',         // Punto al inicio
+                                    content: '"•"',   // Punto personalizado
+                                    color: '#000',    // Color del punto
+                                    fontSize: '1.2em' // Tamaño del punto
+                                }}>•</span>
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
+                </>
+                );
+            case 2:
+                return (
+                    <>
+                        <p>Ser una compañía Farmacéutica próspera para sus socios y colaboradores</p>
+                    </>
+                );
+            case 3:
+                return (
+                    <>
+                        <p>Aqui se colocan las descripciónes de los valores y principios</p>
+                        <ul style={{
+                        display: 'grid',
+                        gridTemplateColumns: '1fr 1fr', // Dividir en dos columnas
+                        columnGap: '20px',             // Espaciado entre columnas
+                        listStyleType: 'none',         // Quitar estilo de lista predeterminado
+                        padding: '0',
+                        margin: '0'
+                    }}>
+                        {[
+                            'Temor de Dios',
+                            'Integridad',
+                            'Respeto',
+                            'Liderazgo',
+                            'Excelencia',
+                            'Innovación',
+                            'Confianza',
+                            'Pasión por nuestros clientes'
+                        ].map((item, index) => (
+                            <li key={index} style={{
+                                position: 'relative',
+                                paddingLeft: '20px',  // Espaciado para el punto
+                                marginBottom: '10px'  // Separación entre líneas
+                            }}>
+                                <span style={{
+                                    position: 'absolute',
+                                    left: '0',         // Punto al inicio
+                                    content: '"•"',   // Punto personalizado
+                                    color: '#000',    // Color del punto
+                                    fontSize: '1.2em' // Tamaño del punto
+                                }}>•</span>
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
+                    </>
+                );
+            case 4:
+                return (
+                    <>
+                        <p>Comercializar productos que cumplan con la normativa nacional e internacional vigente con el fin de proporcionar a nuestros consumidores productos de alta calidad y de uso seguro, satisfacemos los requisitos de nuestras partes interesadas, nos esforzamos y trabajamos constantemente en programas de formación que permitan la mejora continua de los procesos y controles, para garantizar y superar las expectativas de los clientes.</p>
+                        <h3>Objetivos de calidad propuestos:</h3>
+                        <ol>
+                            <li>Comercializar productos.</li>
+                            <li>Cumplir con la normativa nacional e internacional vigente.</li>
+                            <li>Satisfacer los requisitos de las partes interesadas.</li>
+                            <li>Cumplir con el programa(s) de formación.</li>
+                            <li>Mejorar de forma continua los procesos y controles.</li>
+                            <li>Garantizar y superar las expectativas de los clientes.</li>
+         
+                        </ol>
+                    </>
+                );
+            default:
+                return (
+                    <>
+                        <h3>Error</h3>
+                        <p>No se encontró información para el ID proporcionado.</p>
+                    </>
+                );
+        }
+    }
+
 
     const ClickHandler = () => {
         window.scrollTo(10, 0);
@@ -34,15 +152,7 @@ const ServiceSinglePage = (props) => {
                                     <div className="wpo-service-single-title">
                                         <h3>{serviceDetails.sTitle}</h3>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus dis posuere amet
-                                        tincidunt commodo, velit. Ipsum, hac nibh fermentum nisi, platea condimentum cursus
-                                        velit dui. Massa volutpat odio facilisis purus sit elementum. Non, sed velit dictum
-                                        quam. Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt. Id aliquet duis
-                                        sollicitudin diam, elit sit. Et nisi in libero facilisis sed est. Elit curabitur
-                                        amet risus bibendum. Posuere et eget orci, tempor enim.</p>
-                                    <p>Hac nibh fermentum nisi, platea condimentum cursus velit dui. Massa volutpat odio
-                                        facilisis purus sit elementum. Non, sed velit dictum quam. Id risus pharetra est, at
-                                        rhoncus, nec ullamcorper tincidunt. Id aliquet duis sollicitudin diam, elit sit.</p>
+                                    <p>{textoParrafo}</p>
                                     <div className="row mt-4">
                                         <div className="col-md-6 col-sm-6 col-12">
                                             <div className="wpo-p-details-img">
