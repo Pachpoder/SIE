@@ -16,7 +16,7 @@ const ServiceSinglePage = (props) => {
     const serviceDetails = Services.find(item => item.Id === id)
 
     function validateId(id) {
-        switch (parseInt(id, 10)) { // Asegúrate de convertir 'id' a número si es necesario
+        switch (parseInt(id, 10)) {
             case 1:
                 return (
                     <>
@@ -166,7 +166,7 @@ const ServiceSinglePage = (props) => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="wpo-service-single-item list-widget">
+                                {/* <div className="wpo-service-single-item list-widget">
                                     <div className="wpo-service-single-title">
                                         <h3>Our Capabilities</h3>
                                     </div>
@@ -203,8 +203,8 @@ const ServiceSinglePage = (props) => {
                                         <li>Hac nibh fermentum nisi, platea condimentum cursus.</li>
                                         <li>Massa volutpat odio facilisis purus sit elementum.</li>
                                     </ul>
-                                </div>
-                                <div className="wpo-service-single-item">
+                                </div>*/}
+                                {/* <div className="wpo-service-single-item">
                                     <div className="wpo-service-single-title">
                                         <h3>Related Service</h3>
                                     </div>
@@ -221,8 +221,8 @@ const ServiceSinglePage = (props) => {
                                             ))}
                                         </div>
                                     </div>
-                                </div>
-                                <div className="wpo-service-single-item">
+                                </div>  */}
+                                {/* <div className="wpo-service-single-item">
                                     <div className="wpo-service-contact-area">
                                         <div className="wpo-contact-title">
                                             <h2>Have project in mind? Let's discuss</h2>
@@ -232,7 +232,7 @@ const ServiceSinglePage = (props) => {
                                             <Contact/>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <ServiceSidebar/>

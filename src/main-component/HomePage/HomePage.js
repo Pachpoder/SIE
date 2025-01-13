@@ -22,10 +22,10 @@ const HomePage =() => {
             <Hero/>
             <About abimg={abimg}/>
             <ServiceSection/>
-            <CtaSection/>
-            <FunFact/>
-            <TeamSection/>
-            <ProjectSection/>
+            {/* <CtaSection/> */}
+            {/* <FunFact/> */}
+            <ProjectSection/> // Plataformas Mercafarma
+            <TeamSection/>  // paginas web
             <Testimonial/>
             <BlogSection/>
             <PartnerSection/>

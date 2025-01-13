@@ -1,12 +1,12 @@
-import simg from '../images/service/1.jpg'
-import simg2 from '../images/service/2.jpg'
-import simg3 from '../images/service/3.jpg'
-import simg4 from '../images/service/4.jpg'
+import simg from '../images/service/card-mision.jpeg'
+import simg2 from '../images/service/card-vision.png'
+import simg3 from '../images/service/card-valores.png'
+import simg4 from '../images/service/card-politicas.jpeg'
 
-import sImgS1 from '../images/service-single/img-1.jpg'
+import sImgS1 from '../images/service-single/primera-mision.jpg'
 import sImgS2 from '../images/service-single/img-2.jpg'
 import sImgS3 from '../images/service-single/img-3.jpg'
-import sImgS4 from '../images/service-single/img-4.jpg'
+import sImgS4 from '../images/service-single/cuarta-politica.jpg'
 
 import sSingleimg1 from '../images/service-single/2.jpg'
 import sSingleimg2 from '../images/service-single/3.jpg'
