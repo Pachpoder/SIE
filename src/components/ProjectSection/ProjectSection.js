@@ -63,7 +63,7 @@ const ProjectSection = (props) => {
     return (
         <section className={`wpo-project-section section-padding ${props.pClass}`}>
             <div className="container">
-                <SectionTitle2 subTitle={'OUR PORTFOLIO'} Title={'Successfull Work of Consoel'} />
+                <SectionTitle2 subTitle={''} Title={'Plataformas Mercafarma'} />
             </div>
             <div className="container-fluid">
                 <div className="row">

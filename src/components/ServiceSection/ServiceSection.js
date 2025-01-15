@@ -79,12 +79,12 @@ const ServiceSection = () => {
                                         <div className="wpo-service-text">
                                             <h2>{service.sTitle}</h2>
                                             <p>{service.description}</p>
-                                            <Link onClick={ClickHandler} to={`/service-single/${service.Id}`}>Details</Link>
+                                            <Link onClick={ClickHandler} to={`/service-single/${service.Id}`}>Detalles</Link>
                                         </div>
                                         <div className="wpo-service-hidden-text">
                                             <h2>{service.sTitle}</h2>
                                             <p>{service.description}</p>
-                                            <Link onClick={ClickHandler} to={`/service-single/${service.Id}`}>Details</Link>
+                                            <Link onClick={ClickHandler} to={`/service-single/${service.Id}`}>Detalles</Link>
                                             <div className="top-shape">
                                                 <div className="shape-1"></div>
                                                 <div className="shape-2"></div>

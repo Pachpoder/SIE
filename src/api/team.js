@@ -1,27 +1,52 @@
-import timg1 from '../images/team/1.jpg'
-import timg2 from '../images/team/2.jpg'
-import timg3 from '../images/team/3.jpg'
+import timg1 from '../images/team/logo-maxicrez.png'
+import timg2 from '../images/team/logo-perenterol1.png'
+import timg3 from '../images/team/logo-diabelife1.png'
+import timg4 from '../images/team/logo-merca.png'
+import timg5 from '../images/team/logo-diabelife1.png'
 
 
 const Teams = [
     {
         Id: '1',
         tImg:timg1,
-        name:'Harry Abraham',
+        name:'Maxicrez',
         title:'Founder',
+        link: 'https://www.maxicrez.com/',
     },
     {
         Id: '2',
         tImg:timg2,
-        name:'Robert Johnson',
+        name:'Perenterol',
         title:'Admin',
+        link: 'https://www.perenterol.com.gt/',
     },
     {
         Id: '3',
         tImg:timg3,
-        name:'Jenelia Orkid',
+        name:'Diabelife',
         title:'Merketer',
-    }
+        link: 'https://www.diabelife.club/',
+    },
+    {
+        Id: '4',
+        tImg:timg4,
+        name:'Mercafarma',
+        title:'Merketer',
+        link: 'https://www.mercafarma.com.gt/',
+    },
+    // {
+    //     Id: '5',
+    //     tImg:timg5,
+    //     name:'EduMercafarma',
+    //     title:'Merketer',
+    //     link: 'https://www.edumercafarma.com/',
+    // },
+    // {
+    //     Id: '5',
+    //     tImg:timg3,
+    //     name:'Jenelia Orkid',
+    //     title:'Merketer',
+    // },
 ]
 
 export default Teams;

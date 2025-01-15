@@ -19,6 +19,44 @@ const TeamSinglePage = (props) => {
         e.preventDefault()
     }
 
+    const textoParrafo = validateId(id);
+
+    function validateId(id) {
+        switch (parseInt(id, 10)) {
+            case 1:
+                return (
+                    <>
+                    <h3>Hola Como estas</h3>
+                    </>
+                );
+            case 2:
+                return (
+                    <>
+                    <p> </p>
+                    </>
+                );
+            case 3:
+                return (
+                    <>
+                    <p> </p>
+                    </>
+                );
+            case 4:
+                return (
+                    <>
+                    <p> </p>
+                    </>
+                );
+            default:
+                return (
+                    <>
+                        <h3>Error</h3>
+                        <p>No se encontró información para el ID proporcionado. </p>
+                    </>
+                )
+    }
+}
+    
 
 
     return (
@@ -39,7 +77,7 @@ const TeamSinglePage = (props) => {
                                 <div className="col-lg-6">
                                     <div className="team-info-text">
                                         <h2>{TeamDetails.name}</h2>
-                                        <span>Founder & Senior Consultant</span>
+                                        <span>{textoParrafo}</span>
 
                                         <p>Lorem Ipsum is simply dumm text of the printing has been the
                                             industy standard dummy text ever since unknown printer took
