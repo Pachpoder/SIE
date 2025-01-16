@@ -1,5 +1,5 @@
 import pimg1 from '../images/project/Card-Jarvis.png'
-import pimg2 from '../images/project/card-cupones.png'
+import pimg2 from '../images/project/mercafarma-cupones.png'
 import pimg3 from '../images/project/img-3.jpg'
 import pimg4 from '../images/project/img-31.jpg'
 import pimg5 from '../images/project/img-4.jpg'
@@ -35,7 +35,7 @@ const Projects = [
        psub1img1:psub1img1,
        psub1img2:psub1img2,
        title:'Jarvis',  
-       subTitle:'Business Consulting asdfasdf asdfasdklfhjasdlkfhjaklsdjflkasdjfasdfklasdfj lkasdjfklas',   
+       subTitle:'',   
     },
     {
        Id:'2',
@@ -44,7 +44,7 @@ const Projects = [
        psub1img1:psub1img1,
        psub1img2:psub1img2,
        title:'Cupones', 
-       subTitle:'Interior Design',    
+       subTitle:'',    
     },
     {
       Id:'3',
@@ -53,7 +53,7 @@ const Projects = [
       psub1img1:psub1img1,
       psub1img2:psub1img2,
       title:'Diamante',  
-      subTitle:'Business Consulting',   
+      subTitle:'',   
    },
     {
        Id:'4',
@@ -62,7 +62,7 @@ const Projects = [
        psub1img1:psub1img1,
        psub1img2:psub1img2,
        title:'Pago Seguro',  
-       subTitle:'Business Consulting', 
+       subTitle:'', 
     },
     {
        Id:'5',
@@ -71,7 +71,7 @@ const Projects = [
        psub1img1:psub1img1,
        psub1img2:psub1img2,
        title:'Ordenes de Producción',  
-       subTitle:'Business Consulting', 
+       subTitle:'', 
     },
     {
        Id:'6',
@@ -80,7 +80,7 @@ const Projects = [
        psub1img1:psub1img1,
        psub1img2:psub1img2,
        title:'Control de Activos',  
-       subTitle:'Business Consulting', 
+       subTitle:'', 
     },
    //  {
    //     Id:'7',
