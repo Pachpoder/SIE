@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import hero1 from '../../images/slider/mancha.png'
-import hero2 from '../../images/slider/mancha.png'
+import hero2 from '../../images/slider/4.png'
 
 const settings = {
     dots: false,
