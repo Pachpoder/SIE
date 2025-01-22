@@ -7,11 +7,16 @@ import Project from '../../api/project';
 import Contact from './contact';
 import RelatedProject from './related';
 import Footer2 from '../../components/footer2/Footer2';
+import { validateIdPlataforms } from '../../utils/validateIdPlataforms';
 
 const ProjectSinglePage = (props) => {
     const { id } = useParams()
 
+    const textoParrafo = validateIdPlataforms(id);
+
     const projectDetails = Project.find(item => item.Id === id)
+
+  
 
     return (
         <Fragment>
@@ -28,6 +33,9 @@ const ProjectSinglePage = (props) => {
                                             <div className="wpo-project-single-title">
                                                 <h3>{projectDetails.title} Project</h3>
                                             </div>
+                                            
+                                            <p>{textoParrafo}</p>
+
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus dis posuere
                                                 amet
                                                 tincidunt commodo, velit. Ipsum, hac nibh fermentum nisi, platea condimentum

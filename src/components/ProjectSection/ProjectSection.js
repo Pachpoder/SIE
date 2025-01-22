@@ -70,7 +70,7 @@ const ProjectSection = (props) => {
                     <div className="col col-xs-12 sortable-project">
                         <div className="wpo-project-container project-slider owl-carousel">
                             <Slider {...settings}>
-                                {Projects.slice(0, 4).map((project, prj) => (
+                                {Projects.slice(0, 6).map((project, prj) => (
                                     <div className="grid" key={prj}>
                                         <div className="wpo-project-item">
                                             <img src={project.pImg} alt="project" className="img img-responsive" />

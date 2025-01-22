@@ -16,6 +16,18 @@
             }
         }
 
+        .wpo-project-single-title-plataform {
+            h5 {
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 130.5%;
+
+                @media(max-width:767px) {
+                    font-size: 20px;
+                }
+            }
+        }
+
         .wpo-project-single-item {
             margin-bottom: 50px;
             &:last-child{
