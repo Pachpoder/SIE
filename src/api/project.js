@@ -1,7 +1,7 @@
 import pimg1 from '../images/project/Card-Jarvis.png'
 import pimg2 from '../images/project/mercafarma-cupones.png'
 import pimg3 from '../images/project/diamante.png'
-import pimg4 from '../images/project/img-31.jpg'
+import pimg4 from '../images/project/diamante.png'
 import pimg5 from '../images/project/img-31.jpg'
 import pimg6 from '../images/project/img-31.jpg'
 import pimg7 from '../images/project/img-6.jpg'
@@ -61,27 +61,27 @@ const Projects = [
        ps1img:ps1img4,
        psub1img1:psub1img1,
        psub1img2:psub1img2,
-       title:'Pago Seguro',  
+       title:'SIE',  
        subTitle:'', 
     },
-    {
-       Id:'5',
-       pImg:pimg5,
-       ps1img:ps1img5,
-       psub1img1:psub1img1,
-       psub1img2:psub1img2,
-       title:'Ordenes de Producción',  
-       subTitle:'', 
-    },
-    {
-       Id:'6',
-       pImg:pimg6,
-       ps1img:ps1img6,
-       psub1img1:psub1img1,
-       psub1img2:psub1img2,
-       title:'Control de Activos',  
-       subTitle:'', 
-    },
+   //  {
+   //     Id:'5',
+   //     pImg:pimg5,
+   //     ps1img:ps1img5,
+   //     psub1img1:psub1img1,
+   //     psub1img2:psub1img2,
+   //     title:'Ordenes de Producción',  
+   //     subTitle:'', 
+   //  },
+   //  {
+   //     Id:'6',
+   //     pImg:pimg6,
+   //     ps1img:ps1img6,
+   //     psub1img1:psub1img1,
+   //     psub1img2:psub1img2,
+   //     title:'Control de Activos',  
+   //     subTitle:'', 
+   //  },
    //  {
    //     Id:'7',
    //     pImg:pimg7,
