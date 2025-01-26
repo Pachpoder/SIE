@@ -21,7 +21,7 @@ const ProjectSinglePage = (props) => {
     return (
         <Fragment>
             <Navbar3 />
-            <PageTitle pageTitle={projectDetails.title} pagesub={'Project'} />
+            <PageTitle pageTitle={projectDetails.title} pagesub={'Plataformas'} />
             <div className="wpo-project-single-area section-padding">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -36,26 +36,9 @@ const ProjectSinglePage = (props) => {
                                             
                                             <p>{textoParrafo}</p>
 
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus dis posuere
-                                                amet
-                                                tincidunt commodo, velit. Ipsum, hac nibh fermentum nisi, platea condimentum
-                                                cursus
-                                                velit dui. Massa volutpat odio facilisis purus sit elementum. Non, sed velit
-                                                dictum
-                                                quam. Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt. Id
-                                                aliquet duis
-                                                sollicitudin diam, elit sit. Et nisi in libero facilisis sed est. Elit
-                                                curabitur
-                                                amet risus bibendum. Posuere et eget orci, tempor enim.</p>
-                                            <p>Hac nibh fermentum nisi, platea condimentum cursus velit dui. Massa volutpat
-                                                odio
-                                                facilisis purus sit elementum. Non, sed velit dictum quam. Id risus pharetra
-                                                est, at
-                                                rhoncus, nec ullamcorper tincidunt. Id aliquet duis sollicitudin diam, elit
-                                                sit Et nisi in libero facilisis sed est. Elit curabitur amet risus bibendum.
-                                                Posuere et eget orci. sed velit dictum quam. Id risus pharetra est</p>
+                                            
                                         </div>
-                                        <div className="col-lg-5">
+                                        {/* <div className="col-lg-5">
                                             <div className="wpo-project-single-content-des-right">
                                                 <ul>
                                                     <li>Location :<span>7 Lake Street,London</span></li>
@@ -67,13 +50,13 @@ const ProjectSinglePage = (props) => {
                                                     <li>Share :<span>Consulting, Business</span></li>
                                                 </ul>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
-                                    <div className="wpo-project-single-main-img">
+                                    {/* <div className="wpo-project-single-main-img">
                                         <img src={projectDetails.ps1img} alt=""/>
-                                    </div>
+                                    </div> */}
                                 </div>
-                                <div className="wpo-project-single-item list-widget">
+                                {/* <div className="wpo-project-single-item list-widget">
                                     <div className="row">
                                         <div className="col-lg-6">
                                             <div className="wpo-project-single-title">
@@ -100,8 +83,8 @@ const ProjectSinglePage = (props) => {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="wpo-project-single-item">
+                                </div> */}
+                                {/* <div className="wpo-project-single-item">
                                     <div className="wpo-project-single-title">
                                         <h3>Our approach</h3>
                                     </div>
@@ -126,8 +109,8 @@ const ProjectSinglePage = (props) => {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="wpo-project-single-item list-widget">
+                                </div> */}
+                                {/* <div className="wpo-project-single-item list-widget">
                                     <div className="row">
                                         <div className="col-lg-6">
                                             <div className="wpo-project-single-title">
@@ -152,9 +135,9 @@ const ProjectSinglePage = (props) => {
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                                 <RelatedProject/>
-                                <div className="wpo-project-single-item">
+                                {/* <div className="wpo-project-single-item">
                                     <div className="wpo-project-contact-area">
                                         <div className="wpo-contact-title">
                                             <h2>Have project in mind? Let's discuss</h2>
@@ -164,7 +147,7 @@ const ProjectSinglePage = (props) => {
                                             <Contact/>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
