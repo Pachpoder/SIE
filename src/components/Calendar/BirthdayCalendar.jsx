@@ -1,49 +1,61 @@
-// import React from 'react'
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-// import axios from 'axios';
-// import { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { format, startOfMonth, endOfMonth, addDays, isSameDay, getDay } from 'date-fns';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import '../../css/BirthdayCalendar.module.css';  // Add your custom styles here
 
+const BirthdayCalendar = () => {
+    const [birthdays, setBirthdays] = useState([
+        { name: 'Juan Pérez', age: 30, date: '2025-01-05' },
+        { name: 'María López', age: 25, date: '2025-01-15' },
+        { name: 'Carlos García', age: 28, date: '2025-01-20' },
+        { name: 'Ana Torres', age: 22, date: '2025-01-30' }
+    ]);
 
+    const today = new Date();
+    const monthStart = startOfMonth(today);
+    const monthEnd = endOfMonth(today);
+    const daysInMonth = [];
+    let currentDay = monthStart;
 
-// const BirthdayCalendar = () => {
+    // Generate all days in the current month
+    while (currentDay <= monthEnd) {
+        daysInMonth.push(currentDay);
+        currentDay = addDays(currentDay, 1);
+    }
 
-//     const [birthdays, setbirthdays] = useState([])
+    return (
+        <section className="wpo-calendar-section section-padding">
+            <div className="container">
+                <h2 className="text-center">Cumpleaños del Mes</h2>
+                <div className="calendar-container">
+                    <div className="calendar-header">
+                        <h3>{format(today, 'MMMM yyyy')}</h3>
+                    </div>
+                    <div className="calendar-grid">
+                        {daysInMonth.map((day, index) => {
+                            const dayBirthdays = birthdays.filter(birthday => isSameDay(new Date(birthday.date), day));
 
-//     useEffect(() => {
-//       const fetchBirthdays = async () => { 
-//         try {
-//             const response = await axios.get('http://localhost:3001/birthdays')
-//             setbirthdays(response.data);
-//         } catch (error) {
-//             console.error('Error fetching birthdays', error);
-//       }
-//     };
+                            return (
+                                <div key={index} className={`calendar-day ${getDay(day) === 0 ? 'sunday' : ''}`}>
+                                    <span className="calendar-date">{format(day, 'd')}</span>
+                                    {dayBirthdays.length > 0 && (
+                                        <div className="birthday-list">
+                                            {dayBirthdays.map((birthday, idx) => (
+                                                <div key={idx} className="birthday-item">
+                                                    <span>{birthday.name} ({birthday.age} años)</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    )}
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
 
-//     fetchBirthdays();
-//     }, []);
-    
-    
-//   return (
-//     <section className='wpo-calendar-section section-padding'>
-//         <div className='container'>
-//             <h2 className='text-center'>Cumplea;ero del Mes</h2>
-//             <div className='calendar-grid'>
-//                 {birthdays.leght > 0 ? (
-//                     birthdays.map((birthday, index) => (
-//                         <div className="calendar-item" key={index}>
-//                         <h3 className="calendar-name">{birthday.name}</h3>
-//                         <p className="calendar-age">Cumple {birthday.age} años</p>
-//                         <p className="calendar-date">Fecha: {new Date(birthday.date).toLocaleDateString()}</p>
-//                     </div>
-//                     ))
-//                 ) : (
-//                     <p className='text-center'>No hay cumpleaños registrados para este mes.</p>
-//                 )}
-//             </div>
-//         </div>    
-//     </section>
-//   );
-// };
-
-// export default BirthdayCalendar;
+export default BirthdayCalendar;

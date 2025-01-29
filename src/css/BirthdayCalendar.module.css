@@ -1,0 +1,48 @@
+.wpo-calendar-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.calendar-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.calendar-day {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.calendar-date {
+    font-weight: bold;
+    color: #333;
+}
+
+.birthday-list {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.sunday {
+    background-color: #ffe6e6;
+}
