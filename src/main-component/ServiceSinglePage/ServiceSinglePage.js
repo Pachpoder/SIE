@@ -153,7 +153,7 @@ const ServiceSinglePage = (props) => {
                                         <h3>{serviceDetails.sTitle}</h3>
                                     </div>
                                     <p>{textoParrafo}</p>
-                                    <div className="row mt-4">
+                                    {/* <div className="row mt-4">
                                         <div className="col-md-6 col-sm-6 col-12">
                                             <div className="wpo-p-details-img">
                                                 <img src={serviceDetails.ssImg1} alt="" />
@@ -164,7 +164,7 @@ const ServiceSinglePage = (props) => {
                                                 <img src={serviceDetails.ssImg2} alt="" />
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 {/* <div className="wpo-service-single-item list-widget">
                                     <div className="wpo-service-single-title">

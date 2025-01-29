@@ -18,7 +18,7 @@
                 width: 100%;
                 height: 100%;
                 content: "";
-                background: rgba(20, 33, 43, .25);
+                // background: rgba(20, 33, 43, .25);
                 border-radius: 6px;
             }
 
@@ -178,10 +178,12 @@
         p {
             font-size: 18px;
             margin-bottom: 35px;
+            text-align: justify;
 
             @media(max-width:500px) {
                 font-size: 16px;
                 margin-bottom: 20px;
+                text-align: justify;
             }
         }
 
@@ -805,7 +807,7 @@
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
-                background: transparentize($theme-primary-color, .2);
+                background: transparentize(#123452, .2);
                 border-radius: 50%;
                 transition: all .3s;
                 transform: translateY(100%);
@@ -875,7 +877,7 @@
                     transform: translateY(0);
                 }
 
-                background: transparentize($theme-primary-color, .8);
+                background: transparentize(#df0030, .8);
             }
         }
 

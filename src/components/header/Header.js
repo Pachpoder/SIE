@@ -30,8 +30,6 @@ const Header = (props) => {
                                 </div>
                             </div>
                            
-                         
-                            { /* Colocar aqui componente de hamburguesa, para mostrar el menu de extensiones */}
                             <div className="col-lg-3 col-md-6 col-6">
                                 <div className="navbar-header">
                                     <Link onClick={ClickHandler} className="navbar-brand" to="/home"><img src={Logo}
@@ -137,8 +135,9 @@ const Header = (props) => {
                                     </div>
 
                                     <div className="close-form">
+                                        {/* <button className="search-close"><i className="ti-close"></i></button> */}
                                         <Link onClick={ClickHandler} className="theme-btn" to="/contact">
-                                        Contactanos</Link>
+                                        LOGIN SIE</Link>
                                     </div>
                                 </div>
                             </div>

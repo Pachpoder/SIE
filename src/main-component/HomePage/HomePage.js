@@ -14,6 +14,7 @@ import Testimonial from '../../components/Testimonial/Testimonial';
 import PartnerSection from '../../components/PartnerSection/PartnerSection';
 import ContactInfo from '../../components/ContactInfo/ContactInfo';
 import abimg from '../../images/about.jpg'
+import BirthdayCalendar from '../../components/Calendar/BirthdayCalendar';
 
 const HomePage =() => {
     return(
@@ -24,9 +25,10 @@ const HomePage =() => {
             <ServiceSection/>
             {/* <CtaSection/> */}
             {/* <FunFact/> */}
-            <ProjectSection/> // Plataformas Mercafarma
-            <TeamSection/>  // paginas web
+            <ProjectSection/>
+            <TeamSection/>  
             <Testimonial/>
+            <BirthdayCalendar/>
             <BlogSection/>
             <PartnerSection/>
             <ContactInfo/>
