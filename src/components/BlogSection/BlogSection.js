@@ -14,7 +14,7 @@ const BlogSection = () => {
     return (
         <div className="wpo-blog-area-s2 section-padding section-bg">
             <div className="container">
-                <SectionTitle subTitle={'Blog Post'} Title={'Latest News From Blog'} />
+                <SectionTitle subTitle={'Nuestro Compromiso con la experencia e innovación'} Title={'Los Principios Que Nos Impulsan'} />
                 <div className="wpo-blog-wrap">
                     <div className="row align-items-center">
                         {blogs.map((blog, bl) => (
@@ -25,8 +25,8 @@ const BlogSection = () => {
                                     </div>
                                     <div className="blog-content">
                                         <ul>
-                                            <li><a href="blog-single.html">{blog.create_at}</a></li>
-                                            <li>by: {blog.author}</li>
+                                            {/* <li><a href="blog-single.html">{blog.create_at}</a></li> */}
+                                            {/* <li>{blog.author}</li> */}
                                         </ul>
                                         <h2><Link onClick={ClickHandler} to={`/blog-single/${blog.id}`}>{blog.title}</Link></h2>
                                         <Link className="arrow-btn" onClick={ClickHandler} to={`/blog-single/${blog.id}`}><i

@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import About from '../../components/about/about';
 import BlogSection from '../../components/BlogSection/BlogSection';
 import CtaSection from '../../components/ctaSection/ctaSection';
@@ -15,25 +15,29 @@ import PartnerSection from '../../components/PartnerSection/PartnerSection';
 import ContactInfo from '../../components/ContactInfo/ContactInfo';
 import abimg from '../../images/about.jpg'
 import BirthdayCalendar from '../../components/Calendar/BirthdayCalendar';
+import { Button } from 'react-bootstrap-v5';
 
-const HomePage =() => {
-    return(
+const HomePage = () => {
+    return (
         <Fragment>
-            <Navbar hclass={'wpo-header-style-1'} topbarNone={'topbar-none'}/>
-            <Hero/>
-            <About abimg={abimg}/>
-            <ServiceSection/>
+            <Navbar hclass={'wpo-header-style-1'} topbarNone={'topbar-none'} />
+            <Hero />
+            <About abimg={abimg} />
+            <div style={{ paddingBottom: '200px' }}>
+                <BlogSection />
+            </div>
+            {/* <ServiceSection/> */}
             {/* <CtaSection/> */}
             {/* <FunFact/> */}
-            <ProjectSection/>
-            <TeamSection/>  
-            <Testimonial/>
-            <BirthdayCalendar/>
-            <BlogSection/>
-            <PartnerSection/>
-            <ContactInfo/>
-            <Footer/>
-            <Scrollbar/>
+            <ProjectSection />
+            <TeamSection />
+            <Testimonial />
+            <BirthdayCalendar />
+            <BlogSection />
+            <PartnerSection />
+            <ContactInfo />
+            <Footer />
+            <Scrollbar />
         </Fragment>
     )
 };

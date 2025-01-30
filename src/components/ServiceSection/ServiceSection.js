@@ -2,19 +2,20 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import SectionTitle2 from "../SectionTitle2/SectionTitle2";
-import Services from '../../api/service'
-
+import Services from '../../api/service';
+import sImg1 from '../../images/blog/shape.png';
+import sImg2 from '../../images/blog/shape2.png';
 
 const settings = {
     dots: true,
     arrows: false,
-    speed: 1000,
+    speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
-    centerMode: true,
+    centerMode: false,
     responsive: [
         {
             breakpoint: 1400,
@@ -29,8 +30,6 @@ const settings = {
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                infinite: true,
-                centerMode: false,
             }
         },
         {
@@ -38,7 +37,6 @@ const settings = {
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                centerMode: false,
             }
         },
         {
@@ -46,7 +44,6 @@ const settings = {
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                centerMode: false,
             }
         },
         {
@@ -54,55 +51,45 @@ const settings = {
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                centerMode: false,
             }
         }
     ]
 };
 
-const ClickHandler = () =>{
+const ClickHandler = () => {
     window.scrollTo(10, 0);
- }
+}
 
 const ServiceSection = () => {
     return (
-        <section className="wpo-service-section section-padding">
+        <section className="wpo-service-section section-padding section-bg">
             <div className="container">
-                <SectionTitle2 subTitle={'Lo Que Nos Define'} Title={'Filosofía Corporativa'} />
-                <div className="row-grid wpo-service-slider owl-carousel">
+                <SectionTitle2 subTitle={'Nuestro Compromiso con la experencia e innovación'} Title={'Los Principios Que Nos Impulsan'} />
+                <div className="wpo-service-slider">
                     <Slider {...settings}>
                         {Services.map((service, srv) => (
-                            <div className="grid" key={srv}>
-                                <div className="wpo-service-item">
-                                    <div className="wpo-service-img">
-                                        <img src={service.sImg} alt="" />
-                                        <div className="wpo-service-text">
-                                            <h2>{service.sTitle}</h2>
-                                            <p>{service.description}</p>
-                                            <Link onClick={ClickHandler} to={`/service-single/${service.Id}`}>Detalles</Link>
-                                        </div>
-                                        <div className="wpo-service-hidden-text">
-                                            <h2>{service.sTitle}</h2>
-                                            <p>{service.description}</p>
-                                            <Link onClick={ClickHandler} to={`/service-single/${service.Id}`}>Detalles</Link>
-                                            <div className="top-shape">
-                                                <div className="shape-1"></div>
-                                                <div className="shape-2"></div>
-                                                <div className="shape-3"></div>
-                                            </div>
-                                            <div className="bottom-shape">
-                                                <div className="shape-1"></div>
-                                                <div className="shape-2"></div>
-                                                <div className="shape-3"></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div className="service-item animate__animated animate__fadeInUp" key={srv}>
+                                <div className="service-img">
+                                    <img src={service.sImg} alt="" />
+                                </div>
+                                <div className="service-content">
+                                    <h2>
+                                        <Link onClick={ClickHandler} to={`/service-single/${service.Id}`}>
+                                            {service.sTitle}
+                                        </Link>
+                                    </h2>
+                                    <p>{service.description}</p>
+                                    <Link className="arrow-btn" onClick={ClickHandler} to={`/service-single/${service.Id}`}>
+                                        <i className="fi flaticon-right-arrow-1"></i>
+                                    </Link>
                                 </div>
                             </div>
                         ))}
                     </Slider>
                 </div>
             </div>
+            <div className="shape-1"><img src={sImg1} alt=""/></div>
+            <div className="shape-2"><img src={sImg2} alt=""/></div>
         </section>
     );
 }

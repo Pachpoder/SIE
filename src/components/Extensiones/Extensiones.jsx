@@ -3,12 +3,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import PhoneIcon from "@material-ui/icons/Phone"; // Importar ícono de teléfono
 import "../../css/animations.css"; // Archivo CSS para las animaciones
+import transitions from "@material-ui/core/styles/transitions";
 
 const Extensiones = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const [extensions, setExtensions] = useState([]);
   const [search, setSearch] = useState("");
   const [hiddenLetters, setHiddenLetters] = useState({});
+  const [hoveredCard, setHoveredCard] = useState(null);
 
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
@@ -129,7 +131,7 @@ const Extensiones = () => {
     letter: {
       fontSize: "18px",
       fontWeight: "bold",
-      color: "#333",
+      color: "blue",
       marginRight: "10px",
     },
     divider: {
@@ -145,7 +147,16 @@ const Extensiones = () => {
       backgroundColor: "#ffffff",
       display: "flex",
       flexDirection: "column",
+      transition: "all 0.3s ease",
+      cursor: "pointer",
     },
+    cardHover: {
+      boxShadow: "0px 8px 16px rgba(44, 117, 255, 0.4)",  // Sombra azul
+      transform: "translateY(-8px)",
+      backgroundColor: "#d6ebff",  // Azul claro suave que armoniza con el estilo
+      transition: "all 0.3s ease",
+      cursor: "pointer",
+  },
     cardHeader: {
       display: "flex",
       justifyContent: "space-between",
@@ -153,19 +164,22 @@ const Extensiones = () => {
       marginBottom: "10px",
     },
     cardTitle: {
-      color: "red",
+      color: "black",
       fontSize: "18px",
       fontWeight: "bold",
+      cursor: "pointer",
     },
     extension: {
       fontSize: "14px",
       fontWeight: "bold",
-      color: "black",
+      color: "#2c75ff",
+      cursor: "pointer",
     },
     cardText: {
       margin: "5px 0",
       fontSize: "14px",
-      color: "#333",
+      color: "#3c3c3c",
+      cursor: "pointer",
     },
     label: {
       color: "black",
@@ -173,6 +187,7 @@ const Extensiones = () => {
       marginRight: "5px",
     },
   };
+
 
   return (
     <div>
@@ -219,9 +234,17 @@ const Extensiones = () => {
                         timeout={300}
                         classNames="slide"
                       >
-                        <div style={styles.card}>
+
+                        <div 
+                          style={hoveredCard === extension.id_extension ? {...styles.card, ...styles.cardHover} : styles.card
+                        }
+                        onMouseEnter={() => setHoveredCard(extension.id_extension)}
+                        onMouseLeave={() => setHoveredCard(null)}
+                        >
                           <div style={styles.cardHeader}>
-                            <h5 style={styles.cardTitle}>{extension.nombre}</h5>
+                            <h5 style={styles.cardTitle}
+                            // onClick={() => alert(`Seleccionaste: ${extension.nombre}`)}
+                            >{extension.nombre}</h5>
                             <span style={styles.extension}>EXT: {extension.extension}</span>
                           </div>
                           <p style={styles.cardText}>
@@ -246,3 +269,5 @@ const Extensiones = () => {
 };
 
 export default Extensiones;
+
+
