@@ -25,11 +25,12 @@ const BlogSection = () => {
                                     </div>
                                     <div className="blog-content">
                                         <ul>
-                                            {/* <li><a href="blog-single.html">{blog.create_at}</a></li> */}
-                                            {/* <li>{blog.author}</li> */}
+                                            <li><a href="blog-single.html">{blog.create_at}</a></li>
+                                            <li>{blog.author}</li>
                                         </ul>
-                                        <h2><Link onClick={ClickHandler} to={`/blog-single/${blog.id}`}>{blog.title}</Link></h2>
-                                        <Link className="arrow-btn" onClick={ClickHandler} to={`/blog-single/${blog.id}`}><i
+                                        <h2><Link >{blog.title}</Link></h2>
+                                        <Link className="arrow-btn" >
+                                        <i
                                             className="fi flaticon-right-arrow-1"></i></Link>
                                     </div>
                                 </div>
@@ -45,3 +46,5 @@ const BlogSection = () => {
 }
 
 export default BlogSection;
+
+//to={`/blog-single/${blog.id}`}

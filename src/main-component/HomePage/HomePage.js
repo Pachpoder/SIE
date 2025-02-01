@@ -16,10 +16,12 @@ import ContactInfo from '../../components/ContactInfo/ContactInfo';
 import abimg from '../../images/about.jpg'
 import BirthdayCalendar from '../../components/Calendar/BirthdayCalendar';
 import { Button } from 'react-bootstrap-v5';
+import ServiceSectionS2 from '../../components/ServiceSectionS2/ServiceSectionS2';
 
 const HomePage = () => {
     return (
         <Fragment>
+            
             <Navbar hclass={'wpo-header-style-1'} topbarNone={'topbar-none'} />
             <Hero />
             <About abimg={abimg} />
@@ -29,12 +31,13 @@ const HomePage = () => {
             {/* <ServiceSection/> */}
             {/* <CtaSection/> */}
             {/* <FunFact/> */}
-            <ProjectSection />
+            {/* <ProjectSection /> */}
             <TeamSection />
-            <Testimonial />
-            <BirthdayCalendar />
-            <BlogSection />
-            <PartnerSection />
+            {/* <Testimonial /> */}
+            {/* <BirthdayCalendar /> */}
+            {/* <BlogSection /> */}
+            {/* <PartnerSection /> */}
+            <ServiceSectionS2/>
             <ContactInfo />
             <Footer />
             <Scrollbar />

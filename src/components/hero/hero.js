@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { Link } from 'react-router-dom'
 import "slick-carousel/slick/slick.css";
@@ -12,18 +12,35 @@ import hero4 from '../../images/slider/tren-hero.png'
 
 
 // ARREGALR ESTO EL CAMBIO DE VELOCIDAD NO FUNCIONA
-const settings = {
-    dots: false,
-    arrows: true,
-    speed: 1200,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 500,
-    fade: true
-};
+
 
 const Hero = () => {
+
+    const [settings, setSettings] = useState({
+        dots: false,
+        arrows: true,
+        speed: 1200,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 15000,
+        fade: true,
+    });
+
+    useEffect(() => {
+      setSettings ((prev) => ({ ...prev, autoplaySpeed: 1000 }));
+
+      const resetSpeed = setTimeout(() => { 
+        setSettings((prev) => ({ ...prev, autoplaySpeed: 15000 }));
+      }, 1000);
+    
+      return () => {
+        clearTimeout(resetSpeed);
+      }
+    }, []);
+    
+    
+    
     return (
         <section className="hero hero-slider-wrapper hero-style-1">
             <div className="hero-slider">

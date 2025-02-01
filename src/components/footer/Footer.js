@@ -51,14 +51,14 @@ const Footer = (props) => {
                         <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
                             <div className="widget link-widget">
                                 <div className="widget-title">
-                                    <h3>Company</h3>
+                                    <h3>Soporte</h3>
                                 </div>
                                 <ul>
-                                    <li><Link onClick={ClickHandler} to="/about">About company</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/service">Our services</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/project">Job opportunities</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/contact">Contact us</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/about">Vision & Values</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/about">Centro de Asistencia IT</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/service">Pedidos Personales</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/project">Buzon de Quejas y Sugerencias</Link></li>
+                                    <li><Link onClick={ClickHandler} to="/contact">Solicitud RRHH</Link></li>
+                                    {/* <li><Link onClick={ClickHandler} to="/about">Vision & Values</Link></li> */}
                                 </ul>
                             </div>
                         </div>
