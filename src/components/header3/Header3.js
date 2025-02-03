@@ -1,79 +1,128 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import HeaderTopbar2 from '../HeaderTopbar2/HeaderTopbar2'
-import MobileMenu from '../MobileMenu/MobileMenu'
-import Logo from '../../images/logo-mercafarma.png'
-import HamburgerMenuPopup from '../header/MenuPopup/HamburgerMenuPopup'
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { scroller } from 'react-scroll';
+import HeaderTopbar2 from '../HeaderTopbar2/HeaderTopbar2';
+import HamburgerMenuPopup from '../header/MenuPopup/HamburgerMenuPopup';
+import Logo from '../../images/logo-mercafarma.png';
 import styles from '../../css/burgermenu.module.css';
 
-
 const Header3 = (props) => {
-    const [menuActive, setMenuState] = useState(false);
-    const SubmitHandler = (e) => {
-        e.preventDefault()
-    }
-
-    const ClickHandler = () => {
-        window.scrollTo(10, 0);
-    }
-
     const [hamburgerActive, setHamburgerState] = useState(false);
-    
-        const toggleHamburgerMenu = () => {
-            setHamburgerState(!hamburgerActive);
-        };
-        
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (location.hash) {
+            scroller.scrollTo(location.hash.replace('#', ''), {
+                duration: 500,
+                smooth: true,
+                offset: -70,
+            });
+        }
+    }, [location]);
+
+    const toggleHamburgerMenu = () => {
+        setHamburgerState(!hamburgerActive);
+    };
+
+    const handleSectionClick = (sectionId) => {
+        const targetUrl = `/#${sectionId}`;
+
+        if (location.pathname !== '/') {
+            navigate(targetUrl);
+        } else {
+            scroller.scrollTo(sectionId, {
+                duration: 500,
+                smooth: true,
+                offset: -70,
+            });
+        }
+    };
+
     return (
         <header id="header" className={`wpo-header-style-7 ${props.topbarNone}`}>
             <HeaderTopbar2 />
             <div className={`wpo-site-header ${props.hclass}`}>
                 <nav className="navigation navbar navbar-expand-lg navbar-light">
                     <div className="container-fluid">
-                        <div className="row align-items-center">
-                            <div className="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
-                                <div className="mobail-menu">
-                                    <MobileMenu />
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6 col-6">
+                        <div className="row align-items-center justify-content-between">
+                            {/* Logo */}
+                            <div className="col-lg-3 col-md-6 col-8 d-flex align-items-center">
                                 <div className="navbar-header">
-                                    <Link onClick={ClickHandler} className="navbar-brand" to="/home"><img src={Logo}
-                                        alt="" /></Link>
+                                    <Link
+                                        onClick={() => handleSectionClick('banner-section')}
+                                        className="navbar-brand"
+                                        to="/"
+                                    >
+                                        <img src={Logo} alt="Logo Mercafarma" className="logo-img" />
+                                    </Link>
                                 </div>
                             </div>
-                            <div className="col-lg-6 col-md-1 col-1">
-                                <div id="navbar" className="collapse navbar-collapse navigation-holder">
-                                    <button className="menu-close"><i className="ti-close"></i></button>
+
+                            {/* Menú de navegación */}
+                            <div className="col-lg-6 d-none d-lg-block">
+                                <div id="navbar" className="navigation-holder" style={centerMenuStyle}>
                                     <ul className="nav navbar-nav mb-2 mb-lg-0">
-                                        <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} to="/">Inicio</Link>
+                                        <li>
+                                            <Link
+                                                onClick={() => handleSectionClick('banner-section')}
+                                                to="/#banner-section"
+                                                className="nav-link"
+                                            >
+                                                Inicio
+                                            </Link>
                                         </li>
-                                        <li><Link onClick={ClickHandler} to="/">Historia</Link></li>
-                                        <li className="menu-item-has-children">
-                                            <Link to="/">Valores y politicas</Link>
-                                            
+                                        <li>
+                                            <Link
+                                                onClick={() => handleSectionClick('about-section')}
+                                                to="/#about-section"
+                                                className="nav-link"
+                                            >
+                                                Historia
+                                            </Link>
                                         </li>
-                                        <li className="menu-item-has-children">
-                                            <Link to="/">Plataformas</Link>
-                                           
+                                        <li>
+                                            <Link
+                                                onClick={() => handleSectionClick('values-section')}
+                                                to="/#values-section"
+                                                className="nav-link"
+                                            >
+                                                Valores y políticas
+                                            </Link>
                                         </li>
-                                        <li className="menu-item-has-children">
-                                            <Link to="/">Páginas Web</Link>
-                                       
+                                        <li>
+                                            <Link
+                                                onClick={() => handleSectionClick('brands-section')}
+                                                to="/#brands-section"
+                                                className="nav-link"
+                                            >
+                                                Plataformas
+                                            </Link>
                                         </li>
-                                        
-                                        <li><Link onClick={ClickHandler} to="/">Contacto</Link></li>
+                                        <li>
+                                            <Link
+                                                onClick={() => handleSectionClick('capsules-section')}
+                                                to="/#capsules-section"
+                                                className="nav-link"
+                                            >
+                                                Páginas Web
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link
+                                                onClick={() => handleSectionClick('contact-section')}
+                                                to="/#contact-section"
+                                                className="nav-link"
+                                            >
+                                                Contacto
+                                            </Link>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-2 col-2">
-                                <div className="header-right">
-                                    <div className="header-search-form-wrapper">
-                                        <div className="cart-search-contact">
-                                        </div>
-                                    </div>
 
-                                    <div className="col-lg-3 col-md-6 col-4 text-end">
+                            {/* Botón y menú hamburguesa */}
+                            <div className="col-lg-3 col-md-6 col-4 text-end">
                                 <button
                                     className={`${styles['hamburger-menu-btn']} ${hamburgerActive ? styles.active : ''}`}
                                     onClick={toggleHamburgerMenu}
@@ -87,16 +136,14 @@ const Header3 = (props) => {
                                 >
                                     <span className={styles['hamburger-icon']}></span>
                                 </button>
-
-                                {/* Componente de menú emergente */}
                                 <HamburgerMenuPopup isOpen={hamburgerActive} toggleMenu={toggleHamburgerMenu} />
-                            </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </nav>
             </div>
+
+            {/* Estilos adicionales para el responsive */}
             <style>
                 {`
                     @media (max-width: 1024px) {
@@ -167,7 +214,15 @@ const Header3 = (props) => {
                 `}
             </style>
         </header>
-    )
-}
+    );
+};
+
+const centerMenuStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center',
+    height: '100%',
+};
 
 export default Header3;

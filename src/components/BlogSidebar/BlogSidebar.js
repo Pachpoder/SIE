@@ -25,18 +25,28 @@ const BlogSidebar = (props) => {
                     <p>Hi! beautiful people. I`m an authtor of this blog. Read our post - stay with us</p> */}
                     <div className="social">
                         <ul className="clearfix">
-                            <li><Link onClick={ClickHandler} to="/blog-single/1"><i className="ti-facebook"></i></Link></li>
-                            <li><Link onClick={ClickHandler} to="/blog-single/1"><i className="ti-instagram"></i></Link></li>
-                            <li><Link onClick={ClickHandler} to="/blog-single/1"><i className="ti-youtube"></i></Link></li>
-                            {/* <li><Link onClick={ClickHandler} to="/blog-single/1"><i className="ti-linkedin"></i></Link></li> */}
-                            {/* <li><Link onClick={ClickHandler} to="/blog-single/1"><i className="ti-pinterest"></i></Link></li> */}
+                            <li>
+                                <a href="https://www.facebook.com/mkfgt/?locale=es_LA" target="_blank" rel="noopener noreferrer" onClick={ClickHandler}>
+                                    <i className="ti-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.maxicrez.com/" target="_blank" rel="noopener noreferrer" onClick={ClickHandler}>
+                                    <i className="ti-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UC3YNfF1LZkQh9ehELZPu_HQ" target="_blank" rel="noopener noreferrer" onClick={ClickHandler}>
+                                    <i className="ti-youtube"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div className="aw-shape">
                     </div>
                 </div>
-                
-                
+
+
                 <div className="widget recent-post-widget">
                     <h3>Los Principios Que Nos Impulsan</h3>
                     <div className="posts">

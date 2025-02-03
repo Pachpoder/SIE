@@ -26,19 +26,19 @@ const Footer = (props) => {
                                     Innovación, liderazgo y compromiso con la salud.</p>
                                 <ul>
                                     <li>
-                                        <Link onClick={ClickHandler} to="https://www.facebook.com/mkfgt/?locale=es_LA">
+                                        <a href="https://www.facebook.com/mkfgt/?locale=es_LA" target="_blank" rel="noopener noreferrer" onClick={ClickHandler}>
                                             <i className="ti-facebook"></i>
-                                        </Link>
+                                        </a>
                                     </li>
                                     <li>
-                                        <Link onClick={ClickHandler} to="https://www.maxicrez.com/">
+                                        <a href="https://www.maxicrez.com/" target="_blank" rel="noopener noreferrer" onClick={ClickHandler}>
                                             <i className="ti-instagram"></i>
-                                        </Link>
+                                        </a>
                                     </li>
                                     <li>
-                                        <Link onClick={ClickHandler} to="https://www.youtube.com/channel/UC3YNfF1LZkQh9ehELZPu_HQ">
+                                        <a href="https://www.youtube.com/channel/UC3YNfF1LZkQh9ehELZPu_HQ" target="_blank" rel="noopener noreferrer" onClick={ClickHandler}>
                                             <i className="ti-youtube"></i>
-                                        </Link>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
