@@ -11,8 +11,9 @@ const PORT = 5000;
 const db = mysql.createConnection({
     host: '127.0.0.1',
     user: 'root',
-    password: '12345678', 
-    database: 'laravel', 
+    password: 'Tiger11332244.', 
+    database: 'sie', 
+    port: 51000,
 });
 
 

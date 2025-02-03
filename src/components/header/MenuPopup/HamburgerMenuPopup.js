@@ -107,7 +107,7 @@ const HamburgerMenuPopup = ({ isOpen, toggleMenu }) => {
                     </div>
 
                     {/* Botón de Login SIE */}
-                    <div style={styles.buttonPrimary} className="hover-button-sie" onClick={() => window.location.href = 'http://192.168.1.161/login'}>
+                    <div style={styles.buttonPrimary} className="hover-button-sie" onClick={() => window.open('http://192.168.1.161:8000/login', '_blank')}>
                         Login SIE
                     </div>
                 </div>
