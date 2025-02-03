@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Homepage from '../HomePage/HomePage'
 import HomePage2 from '../HomePage2/HomePage2';
@@ -49,12 +49,6 @@ const AllRoute = () => {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="home" element={<Homepage />} />
-          <Route path="home2" element={<HomePage2 />} />
-          <Route path="home3" element={<HomePage3 />} />
-          <Route path="home4" element={<HomePage4 />} />
-          <Route path="home5" element={<HomePage5 />} />
-          <Route path="home6" element={<HomePage6 />} />
-          <Route path="home7" element={<HomePage7 />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="service" element={<ServicePage />} />
           <Route path="service-s2" element={<ServicePageS2 />} />
@@ -79,12 +73,9 @@ const AllRoute = () => {
           <Route path='blog-left-sidebar' element={<BlogPageLeft />} />
           <Route path='blog-fullwidth' element={<BlogPageFullwidth />} />
           <Route path='contact' element={<ContactPage />} />
-          <Route path='404' element={<ErrorPage />} />
-          <Route path='login' element={<LoginPage />} />
-          <Route path='register' element={<SignUpPage />} />
-          <Route path='forgot-password' element={<ForgotPassword />} />
           <Route path="politicas" element={<PoliticasDetails />} />
           <Route path="reglas-seguridad" element={<ReglasSeguridadDetails />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
 
