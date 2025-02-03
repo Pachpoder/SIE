@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';  // Importa react-scroll para navegación suave
 import HeaderTopbar from '../HeaderTopbar/HeaderTopbar';
 import HamburgerMenuPopup from '../../components/header/MenuPopup/HamburgerMenuPopup';
 import Logo from '../../images/logo-mercafarma.png';
@@ -8,10 +8,6 @@ import styles from '../../css/burgermenu.module.css';
 
 const Header = (props) => {
     const [hamburgerActive, setHamburgerState] = useState(false);
-
-    const ClickHandler = () => {
-        window.scrollTo(10, 0);
-    };
 
     const toggleHamburgerMenu = () => {
         setHamburgerState(!hamburgerActive);
@@ -27,7 +23,7 @@ const Header = (props) => {
                             {/* Logo */}
                             <div className="col-lg-3 col-md-6 col-8 d-flex align-items-center">
                                 <div className="navbar-header">
-                                    <Link onClick={ClickHandler} className="navbar-brand" to="/home">
+                                    <Link to="banner-section" smooth={true} duration={500} className="navbar-brand">
                                         <img src={Logo} alt="Logo Mercafarma" className="logo-img" />
                                     </Link>
                                 </div>
@@ -38,12 +34,12 @@ const Header = (props) => {
                             <div className="col-lg-6 d-none d-lg-block">
                                 <div id="navbar" className="navigation-holder" style={centerMenuStyle}>
                                     <ul className="nav navbar-nav mb-2 mb-lg-0">
-                                        <li><Link onClick={ClickHandler} to="/">Inicio</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/about">Historia</Link></li>
-                                        <li className="menu-item-has-children"><Link to="/service">Valores y políticas</Link></li>
-                                        <li className="menu-item-has-children"><Link to="/service">Plataformas</Link></li>
-                                        <li className="menu-item-has-children"><Link to="/project">Páginas Web</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/contact">Contacto</Link></li>
+                                        <li><Link to="banner-section" smooth={true} duration={500}>Inicio</Link></li>
+                                        <li><Link to="about-section" smooth={true} duration={500}>Historia</Link></li>
+                                        <li><Link to="values-section" smooth={true} duration={500}>Valores y políticas</Link></li>
+                                        <li><Link to="brands-section" smooth={true} duration={500}>Marcas</Link></li>
+                                        <li><Link to="capsules-section" smooth={true} duration={500}>Cápsulas</Link></li>
+                                        <li><Link to="contact-section" smooth={true} duration={500}>Contacto</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -115,17 +111,6 @@ const Header = (props) => {
                             margin: 5px auto;
                             border-radius: 2px;
                         }
-
-                        /* Estilo para centrar el menú emergente en móviles */
-                        .menu-popup-centered {
-                            position: fixed;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            width: 90%;
-                            max-width: 400px;
-                            z-index: 1000;
-                        }
                     }
 
                     @media (min-width: 1025px) {
@@ -135,15 +120,6 @@ const Header = (props) => {
 
                         .logo-img {
                             max-height: 50px;
-                        }
-
-                        /* Menú emergente en el lado derecho arriba en PC */
-                        .menu-popup-centered {
-                            position: fixed;
-                            top: 20px;
-                            right: 20px;
-                            width: 300px;
-                            z-index: 1000;
                         }
                     }
 
