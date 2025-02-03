@@ -26,7 +26,7 @@ const Extensiones = () => {
   useEffect(() => {
     const fetchExtensions = async () => {
       try {
-        const response = await fetch("http://192.168.1.161:5000/extensiones");
+        const response = await fetch("http://192.168.1.161:8000/api/extensiones");
         const data = await response.json();
         setExtensions(data);
       } catch (error) {
