@@ -5,6 +5,9 @@ import PhoneIcon from "@material-ui/icons/Phone"; // Importar ícono de teléfon
 import "../../css/animations.css"; // Archivo CSS para las animaciones
 import transitions from "@material-ui/core/styles/transitions";
 
+const CACHE_KEY = "extensions_cache";
+const CACHE_TTL = 60 * 60 * 1000; // 1 hora en milisegundos
+
 const Extensiones = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const [extensions, setExtensions] = useState([]);
@@ -26,8 +29,22 @@ const Extensiones = () => {
   useEffect(() => {
     const fetchExtensions = async () => {
       try {
+        // Comprobar si hay datos en caché
+        const cachedData = localStorage.getItem(CACHE_KEY);
+        if (cachedData) {
+          const { data, timestamp } = JSON.parse(cachedData);
+          if (Date.now() - timestamp < CACHE_TTL) {
+            setExtensions(data);
+            return;
+          }
+        }
+
+        // Si no hay caché válida, realizar la solicitud a la API
         const response = await fetch("http://192.168.1.161:8000/api/extensiones");
         const data = await response.json();
+
+        // Almacenar los datos en la caché con un timestamp
+        localStorage.setItem(CACHE_KEY, JSON.stringify({ data, timestamp: Date.now() }));
         setExtensions(data);
       } catch (error) {
         console.error("Error fetching extensiones:", error);
@@ -151,12 +168,12 @@ const Extensiones = () => {
       cursor: "pointer",
     },
     cardHover: {
-      boxShadow: "0px 8px 16px rgba(44, 117, 255, 0.4)",  // Sombra azul
+      boxShadow: "0px 8px 16px rgba(44, 117, 255, 0.4)", // Sombra azul
       transform: "translateY(-8px)",
-      backgroundColor: "#d6ebff",  // Azul claro suave que armoniza con el estilo
+      backgroundColor: "#d6ebff", // Azul claro suave que armoniza con el estilo
       transition: "all 0.3s ease",
       cursor: "pointer",
-  },
+    },
     cardHeader: {
       display: "flex",
       justifyContent: "space-between",
@@ -188,14 +205,10 @@ const Extensiones = () => {
     },
   };
 
-
   return (
     <div>
       {!showSidebar && (
-        <button
-          style={styles.button}
-          onClick={toggleSidebar}
-        >
+        <button style={styles.button} onClick={toggleSidebar}>
           <PhoneIcon style={styles.icon} />
         </button>
       )}
@@ -229,29 +242,26 @@ const Extensiones = () => {
                 <TransitionGroup>
                   {!hiddenLetters[letter] &&
                     groupedExtensions[letter].map((extension) => (
-                      <CSSTransition
-                        key={extension.id_extension}
-                        timeout={300}
-                        classNames="slide"
-                      >
-
-                        <div 
-                          style={hoveredCard === extension.id_extension ? {...styles.card, ...styles.cardHover} : styles.card
-                        }
-                        onMouseEnter={() => setHoveredCard(extension.id_extension)}
-                        onMouseLeave={() => setHoveredCard(null)}
+                      <CSSTransition key={extension.id_extension} timeout={300} classNames="slide">
+                        <div
+                          style={
+                            hoveredCard === extension.id_extension
+                              ? { ...styles.card, ...styles.cardHover }
+                              : styles.card
+                          }
+                          onMouseEnter={() => setHoveredCard(extension.id_extension)}
+                          onMouseLeave={() => setHoveredCard(null)}
                         >
                           <div style={styles.cardHeader}>
-                            <h5 style={styles.cardTitle}
-                            // onClick={() => alert(`Seleccionaste: ${extension.nombre}`)}
-                            >{extension.nombre}</h5>
+                            <h5 style={styles.cardTitle}>{extension.nombre}</h5>
                             <span style={styles.extension}>EXT: {extension.extension}</span>
                           </div>
                           <p style={styles.cardText}>
                             <span style={styles.label}>Correo:</span> {extension.correo}
                           </p>
                           <p style={styles.cardText}>
-                            <span style={styles.label}>Departamento:</span> {extension.departamento || "Sin asignar"}
+                            <span style={styles.label}>Departamento:</span>{" "}
+                            {extension.departamento || "Sin asignar"}
                           </p>
                         </div>
                       </CSSTransition>
@@ -269,5 +279,3 @@ const Extensiones = () => {
 };
 
 export default Extensiones;
-
-
