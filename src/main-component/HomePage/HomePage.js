@@ -28,15 +28,9 @@ const HomePage = () => {
             <div style={{ paddingBottom: '200px' }}>
                 <BlogSection />
             </div>
-            {/* <ServiceSection/> */}
-            {/* <CtaSection/> */}
-            {/* <FunFact/> */}
-            {/* <ProjectSection /> */}
+          
             <TeamSection />
-            {/* <Testimonial /> */}
-            {/* <BirthdayCalendar /> */}
-            {/* <BlogSection /> */}
-            {/* <PartnerSection /> */}
+          
             <ServiceSectionS2/>
             <ContactInfo />
             <Footer />
