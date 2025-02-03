@@ -29,7 +29,8 @@ const ContactInfo = (props) => {
                                 <div className="office-info-text">
                                     
                                     <a href="https://wa.me/50248811026" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
-                                        <p>+502 4881 1026</p>
+                                       
+                                        <p>Mercafarma</p>
                                     </a>
                                     <a href="https://wa.me/50248811026" target="_blank" rel="noopener noreferrer">
                                         <button style={buttonStyle}
@@ -52,6 +53,14 @@ const ContactInfo = (props) => {
                                 <div className="office-info-text">
                                     <p>recursoshumanos@
                                         grupomercafarma.com</p>
+                                        <a href="https://wa.me/50230819160" target="_blank" rel="noopener noreferrer">
+                                        <button style={buttonStyle}
+                                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#c83a32'}
+                                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#ab271f'}
+                                        >
+                                            WhatsApp RRHH
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

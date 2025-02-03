@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import HeaderTopbar2 from '../HeaderTopbar2/HeaderTopbar2'
 import MobileMenu from '../MobileMenu/MobileMenu'
 import Logo from '../../images/logo-mercafarma.png'
+import HamburgerMenuPopup from '../header/MenuPopup/HamburgerMenuPopup'
+import styles from '../../css/burgermenu.module.css';
 
 
 const Header3 = (props) => {
@@ -15,6 +17,12 @@ const Header3 = (props) => {
         window.scrollTo(10, 0);
     }
 
+    const [hamburgerActive, setHamburgerState] = useState(false);
+    
+        const toggleHamburgerMenu = () => {
+            setHamburgerState(!hamburgerActive);
+        };
+        
     return (
         <header id="header" className={`wpo-header-style-7 ${props.topbarNone}`}>
             <HeaderTopbar2 />
@@ -39,70 +47,22 @@ const Header3 = (props) => {
                                     <ul className="nav navbar-nav mb-2 mb-lg-0">
                                         <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} to="/">Inicio</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/home">Inicio</Link></li>
-                                                {/* <li><Link onClick={ClickHandler} to="/home2">Home style 2</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/home3">Home style 3</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/home4">Home style 4</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/home5">Home style 5</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/home6">Home style 6</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/home7">Home style 7</Link></li> */}
-                                            </ul>
                                         </li>
-                                        <li><Link onClick={ClickHandler} to="/about">Historia</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/">Historia</Link></li>
                                         <li className="menu-item-has-children">
-                                            <Link to="/service">Valores y politicas</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/service">Misión</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/service-s2">Visión</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/service-s3">Valores</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/service-single/1">Politicas de Calidad</Link></li>
-                                            </ul>
+                                            <Link to="/">Valores y politicas</Link>
+                                            
                                         </li>
                                         <li className="menu-item-has-children">
-                                            <Link to="/service">Plataformas</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/project">Project Style 1</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/project-s2">Project Style 2</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/project-s3">Project Style 3</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/project-single/1">Project Single</Link></li>
-                                            </ul>
+                                            <Link to="/">Plataformas</Link>
+                                           
                                         </li>
                                         <li className="menu-item-has-children">
-                                            <Link to="/project">Páginas Web</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/team">Team</Link></li>
-                                                <li><Link onClick={ClickHandler}  to="/team-single/1">Team single</Link></li>
-                                                <li><Link onClick={ClickHandler}  to="/shop">Shop Page</Link></li>
-                                                <li><Link onClick={ClickHandler}  to="/shop-single">Shop Single</Link></li>
-                                                <li><Link onClick={ClickHandler}  to="/cart">Cart</Link></li>
-                                                <li><Link onClick={ClickHandler}  to="/checkout">Checkout</Link></li>
-                                                <li><Link onClick={ClickHandler}  to="/pricing">Pricing</Link></li>
-                                                <li><Link onClick={ClickHandler}  to="/404">404 Error</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/login">Login</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/register">Register</Link></li>
-                                            </ul>
+                                            <Link to="/">Páginas Web</Link>
+                                       
                                         </li>
-                                        {/* <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} to="/blog">Blog</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/blog">Blog right sidebar</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/blog-left-sidebar">Blog left sidebar</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/blog-fullwidth">Blog fullwidth</Link></li>
-                                                <li className="menu-item-has-children">
-                                                    <Link onClick={ClickHandler} to="/">Blog details</Link>
-                                                    <ul className="sub-menu">
-                                                        <li><Link onClick={ClickHandler} to="/blog-single/1">Blog details right sidebar</Link>
-                                                        </li>
-                                                        <li><Link onClick={ClickHandler} to="/blog-single-left-sidebar/1">Blog details left
-                                                            sidebar</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/blog-single-fullwidth/1">Blog details
-                                                            fullwidth</Link></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li> */}
-                                        <li><Link onClick={ClickHandler} to="/contact">Contacto</Link></li>
+                                        
+                                        <li><Link onClick={ClickHandler} to="/">Contacto</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -110,31 +70,102 @@ const Header3 = (props) => {
                                 <div className="header-right">
                                     <div className="header-search-form-wrapper">
                                         <div className="cart-search-contact">
-                                            <button onClick={() => setMenuState(!menuActive)} className="search-toggle-btn"><i
-                                                className={`fi ti-search ${menuActive ? "ti-close" : "fi "}`}></i></button>
-                                            <div className={`header-search-form ${menuActive ? "header-search-content-toggle" : ""}`}>
-                                                <form onSubmit={SubmitHandler}>
-                                                    <div>
-                                                        <input type="text" className="form-control"
-                                                            placeholder="Search here..." />
-                                                        <button type="submit"><i
-                                                            className="fi flaticon-search-interface-symbol"></i></button>
-                                                    </div>
-                                                </form>
-                                            </div>
                                         </div>
                                     </div>
 
-                                    <div className="close-form">
-                                        <Link onClick={ClickHandler} className="theme-btn" to="/contact">
-                                            Contactanos</Link>
-                                    </div>
+                                    <div className="col-lg-3 col-md-6 col-4 text-end">
+                                <button
+                                    className={`${styles['hamburger-menu-btn']} ${hamburgerActive ? styles.active : ''}`}
+                                    onClick={toggleHamburgerMenu}
+                                    style={{
+                                        border: 'none',
+                                        background: 'none',
+                                        padding: '8px',
+                                        fontSize: '24px',
+                                        lineHeight: '0',
+                                    }}
+                                >
+                                    <span className={styles['hamburger-icon']}></span>
+                                </button>
+
+                                {/* Componente de menú emergente */}
+                                <HamburgerMenuPopup isOpen={hamburgerActive} toggleMenu={toggleHamburgerMenu} />
+                            </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </nav>
             </div>
+            <style>
+                {`
+                    @media (max-width: 1024px) {
+                        #navbar {
+                            display: none;
+                        }
+
+                        .hamburger-menu-btn {
+                            display: inline-block;
+                            position: relative;
+                            z-index: 10;
+                        }
+
+                        .logo-img {
+                            max-height: 40px;
+                            width: auto;
+                            margin: 0 auto;
+                        }
+
+                        .wpo-site-header {
+                            padding: 12px 16px;
+                        }
+
+                        .container-fluid {
+                            padding: 0;
+                            flex-wrap: nowrap;
+                        }
+
+                        .navbar-header,
+                        .text-end {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+
+                        .hamburger-icon {
+                            width: 28px;
+                            height: 3px;
+                            background-color: #fff;
+                            margin: 5px auto;
+                            border-radius: 2px;
+                        }
+                    }
+
+                    @media (min-width: 1025px) {
+                        .hamburger-menu-btn {
+                            display: none;
+                        }
+
+                        .logo-img {
+                            max-height: 50px;
+                        }
+                    }
+
+                    @media (max-width: 480px) {
+                        .logo-img {
+                            max-height: 35px;
+                        }
+
+                        .wpo-site-header {
+                            padding: 8px 12px;
+                        }
+
+                        .text-end {
+                            justify-content: flex-end;
+                        }
+                    }
+                `}
+            </style>
         </header>
     )
 }

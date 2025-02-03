@@ -18,41 +18,27 @@ const BlogSidebar = (props) => {
         <div className={`col col-lg-4 col-12 ${props.blLeft}`}>
             <div className="blog-sidebar">
                 <div className="widget about-widget">
-                    <div className="img-holder">
+                    {/* <div className="img-holder">
                         <img src={about} alt="" />
                     </div>
                     <h4>Jenny Watson</h4>
-                    <p>Hi! beautiful people. I`m an authtor of this blog. Read our post - stay with us</p>
+                    <p>Hi! beautiful people. I`m an authtor of this blog. Read our post - stay with us</p> */}
                     <div className="social">
                         <ul className="clearfix">
                             <li><Link onClick={ClickHandler} to="/blog-single/1"><i className="ti-facebook"></i></Link></li>
-                            <li><Link onClick={ClickHandler} to="/blog-single/1"><i className="ti-twitter-alt"></i></Link></li>
-                            <li><Link onClick={ClickHandler} to="/blog-single/1"><i className="ti-linkedin"></i></Link></li>
-                            <li><Link onClick={ClickHandler} to="/blog-single/1"><i className="ti-pinterest"></i></Link></li>
+                            <li><Link onClick={ClickHandler} to="/blog-single/1"><i className="ti-instagram"></i></Link></li>
+                            <li><Link onClick={ClickHandler} to="/blog-single/1"><i className="ti-youtube"></i></Link></li>
+                            {/* <li><Link onClick={ClickHandler} to="/blog-single/1"><i className="ti-linkedin"></i></Link></li> */}
+                            {/* <li><Link onClick={ClickHandler} to="/blog-single/1"><i className="ti-pinterest"></i></Link></li> */}
                         </ul>
                     </div>
                     <div className="aw-shape">
                     </div>
                 </div>
-                <div className="widget search-widget">
-                    <h3>Search Here</h3>
-                    <form onSubmit={SubmitHandler}>
-                        <div>
-                            <input type="text" className="form-control" placeholder="Search Post.." />
-                            <button type="submit"><i className="ti-search"></i></button>
-                        </div>
-                    </form>
-                </div>
-                <div className="widget category-widget">
-                    <h3>Post Categories</h3>
-                    <ul>
-                        {Services.slice(0, 6).map((service, Sitem) => (
-                            <li key={Sitem}><Link onClick={ClickHandler} to={`/service-single/${service.Id}`}>{service.sTitle}</Link></li>
-                        ))}
-                    </ul>
-                </div>
+                
+                
                 <div className="widget recent-post-widget">
-                    <h3>Related Posts</h3>
+                    <h3>Los Principios Que Nos Impulsan</h3>
                     <div className="posts">
                         {blogs.map((blog, bl) => (
                             <div className="post" key={bl}>
@@ -67,7 +53,7 @@ const BlogSidebar = (props) => {
                         ))}
                     </div>
                 </div>
-                <div className="widget tag-widget">
+                {/* <div className="widget tag-widget">
                     <h3>Tags</h3>
                     <ul>
                         <li><Link onClick={ClickHandler} to="/blog-single/1">Consulting</Link></li>
@@ -85,7 +71,7 @@ const BlogSidebar = (props) => {
                     <div className="wpo-contact-widget-inner">
                         <h2><Link onClick={ClickHandler} to="/contact">Contact For Advertisment 270 x 310</Link></h2>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

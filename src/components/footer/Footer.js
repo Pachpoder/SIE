@@ -53,6 +53,7 @@ const Footer = (props) => {
                                     <li><Link onClick={() => window.open('https://www.wrike.com/frontend/requestforms/index.html?token=eyJhY2NvdW50SWQiOjI4NjQyMTMsInRhc2tGb3JtSWQiOjczNTE4MX0JNDgxNzMxNDkzOTQ4OQljMDFjNjJmMTFlMGJlMTkzNjM0MmQ1ODZkNjZlZWNmMDI5OTAyZjI1Mzk5ODlhM2EzMjQ2ZjQ5ZTM0NGJlZmRi', '_blank')} to="#">Pedidos Personales</Link></li>
                                     <li><Link onClick={() => window.open('https://www.wrike.com/frontend/requestforms/index.html?token=eyJhY2NvdW50SWQiOjI4NjQyMTMsInRhc2tGb3JtSWQiOjY4MTUxMX0JNDgwNjU4MDEzNDUzOAlkMTk2MTUxZGZhYjk1OTJiMTc5ODI3OTc2NTE2NTQ1MGU5ZGE0ZjVjYmFjZjBjOTBhNTQ1YzAxZTE3YWEwMWEx', '_blank')} to="#">Buzón de Quejas y Sugerencias</Link></li>
                                     <li><Link onClick={() => window.open('https://tinyurl.com/29hub4qt', '_blank')} to="#">Solicitud RRHH</Link></li>
+                                    <li><Link onClick={() => window.open('https://portal.gyt.com.gt/guest/consultas/medired/busqueda.php?medicosPageSize=50&medicosOrder=Sorter_NOMBRE&medicosDir=ASC%2F1000&medicosPage=1', '_blank')} to="#">Médicos Afiliados</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -62,20 +63,18 @@ const Footer = (props) => {
                                     <h3>Políticas</h3>
                                 </div>
                                 <ul>
+                                    {/* <li>
+                                        <h4><Link onClick={ClickHandler} to="/politicas">Políticas de vestimenta</Link></h4>
+                                    </li> */}
                                     <li>
-                                        <h4><Link onClick={ClickHandler} to="/">Políticas de Vestimenta</Link></h4>
-                                        {/* <span><i className="fi flaticon-calendar"></i> 10.02.2022</span> */}
-                                    </li>
-                                    <li>
-                                        <h4><Link onClick={ClickHandler} to="/">10 reglas de seguridad</Link></h4>
-                                        {/* <span><i className="fi flaticon-calendar"></i> 10.02.2022</span> */}
+                                        <h4><Link onClick={ClickHandler} to="/reglas-seguridad">10 reglas de oro Ciberseguridad</Link></h4>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        {/* <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
                             <div className="widget link-widget">
-                                <div className="widget-title">
+                                {/* <div className="widget-title">
                                     <h3>Contacto</h3>
                                 </div>
                                 <ul>
@@ -83,9 +82,9 @@ const Footer = (props) => {
                                     <li><Link onClick={() => window.open('https://www.wrike.com/frontend/requestforms/index.html?token=eyJhY2NvdW50SWQiOjI4NjQyMTMsInRhc2tGb3JtSWQiOjczNTE4MX0JNDgxNzMxNDkzOTQ4OQljMDFjNjJmMTFlMGJlMTkzNjM0MmQ1ODZkNjZlZWNmMDI5OTAyZjI1Mzk5ODlhM2EzMjQ2ZjQ5ZTM0NGJlZmRi', '_blank')} to="#">Pedidos Personales</Link></li>
                                     <li><Link onClick={() => window.open('https://www.wrike.com/frontend/requestforms/index.html?token=eyJhY2NvdW50SWQiOjI4NjQyMTMsInRhc2tGb3JtSWQiOjY4MTUxMX0JNDgwNjU4MDEzNDUzOAlkMTk2MTUxZGZhYjk1OTJiMTc5ODI3OTc2NTE2NTQ1MGU5ZGE0ZjVjYmFjZjBjOTBhNTQ1YzAxZTE3YWEwMWEx', '_blank')} to="#">Buzón de Quejas y Sugerencias</Link></li>
                                     <li><Link onClick={() => window.open('https://tinyurl.com/29hub4qt', '_blank')} to="#">Solicitud RRHH</Link></li>
-                                </ul>
+                                </ul> */}
                             </div>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
                 <div className="ft-shape">

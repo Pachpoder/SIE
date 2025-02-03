@@ -13,7 +13,7 @@ const PageTitle = (props) => {
                         <div className="col col-xs-12">
                             <h2>{props.pageTitle}</h2>
                             <ol className="breadcrumb">
-                                <li><Link to="/home">Inicio</Link></li>
+                                <li><Link to="/">Inicio</Link></li>
                                 <li><span>{props.pagesub}</span></li>
                             </ol>
                         </div>

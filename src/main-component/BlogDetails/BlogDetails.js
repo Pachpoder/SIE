@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom'
 import blogs from '../../api/blogs'
 import BlogSingle from '../../components/BlogDetails/BlogSingle.js'
 import Footer2 from '../../components/footer2/Footer2';
+import Footer from '../../components/footer/Footer.js';
 
 
 const BlogDetails =() => {
@@ -19,7 +20,7 @@ const BlogDetails =() => {
             <Navbar3/>
             <PageTitle pageTitle={BlogDetails.title} pagesub={'Blog'}/> 
              <BlogSingle/>
-             <Footer2/>
+             <Footer/>
             <Scrollbar/>
         </Fragment>
     )

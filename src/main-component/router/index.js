@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter,Routes,Route,} from "react-router-dom";
+import { BrowserRouter, Routes, Route, } from "react-router-dom";
 
 import Homepage from '../HomePage/HomePage'
 import HomePage2 from '../HomePage2/HomePage2';
@@ -36,53 +36,58 @@ import ErrorPage from '../ErrorPage/ErrorPage';
 import LoginPage from '../LoginPage';
 import SignUpPage from '../SignUpPage';
 import ForgotPassword from '../ForgotPassword';
+import PoliticasDetails from '../PoliticasDetails/PoliticasDetails';
+import ReglasSeguridadDetails from '../ReglasSeguridadDetails/ReglasSeguridadDetails';
 
-      
-const AllRoute = () => { 
+
+
+const AllRoute = () => {
 
   return (
     <div className="App">
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            {/* <Route path="home" element={<Homepage />} />
-            <Route path="home2" element={<HomePage2 />} />
-            <Route path="home3" element={<HomePage3 />} />
-            <Route path="home4" element={<HomePage4 />} />
-            <Route path="home5" element={<HomePage5 />} />
-            <Route path="home6" element={<HomePage6 />} />
-            <Route path="home7" element={<HomePage7 />} />
-            <Route path="about" element={<AboutPage />} />
-            <Route path="service" element={<ServicePage />} />
-            <Route path="service-s2" element={<ServicePageS2 />} />
-            <Route path="service-s3" element={<ServicePageS3 />} />
-            <Route path="service-single/:id" element={<ServiceSinglePage />} />
-            <Route path="project" element={<ProjectPage />} />
-            <Route path="project-s2" element={<ProjectPageS2 />} />
-            <Route path="project-s3" element={<ProjectPageS3 />} />
-            <Route path="project-single/:id" element={<ProjectSinglePage />} />
-            <Route path="team" element={<TeamPage />} />
-            <Route path="team-single/:id" element={<TeamSinglePage />} />
-            <Route path="shop" element={<ShopPage />} />
-            <Route path='product-single/:id' element={<ProductSinglePage/>} />
-            <Route path='cart' element={<CartPage/>} />
-            <Route path='checkout' element={<CheckoutPage/>} />
-            <Route path='order_received' element={<OrderRecived/>} />
-            <Route path='pricing' element={<PricingPage/>} />
-            <Route path='blog-single/:id' element={<BlogDetails/>}/> 
-            <Route path='blog-single-left-sidebar/:id' element={<BlogDetailsLeftSiide/>}/> 
-            <Route path='blog-single-fullwidth/:id' element={<BlogDetailsFull/>}/> 
-            <Route path='blog' element={<BlogPage/>}/> 
-            <Route path='blog-left-sidebar' element={<BlogPageLeft/>}/>
-            <Route path='blog-fullwidth' element={<BlogPageFullwidth/>}/>
-            <Route path='contact' element={<ContactPage/>}/>
-            <Route path='404' element={<ErrorPage/>}/>
-            <Route path='login' element={<LoginPage/>}/>
-            <Route path='register' element={<SignUpPage/>}/>
-            <Route path='forgot-password' element={<ForgotPassword/>}/> */}
-          </Routes>
-        </BrowserRouter>
-      
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="home" element={<Homepage />} />
+          <Route path="home2" element={<HomePage2 />} />
+          <Route path="home3" element={<HomePage3 />} />
+          <Route path="home4" element={<HomePage4 />} />
+          <Route path="home5" element={<HomePage5 />} />
+          <Route path="home6" element={<HomePage6 />} />
+          <Route path="home7" element={<HomePage7 />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="service" element={<ServicePage />} />
+          <Route path="service-s2" element={<ServicePageS2 />} />
+          <Route path="service-s3" element={<ServicePageS3 />} />
+          <Route path="service-single/:id" element={<ServiceSinglePage />} />
+          <Route path="project" element={<ProjectPage />} />
+          <Route path="project-s2" element={<ProjectPageS2 />} />
+          <Route path="project-s3" element={<ProjectPageS3 />} />
+          <Route path="project-single/:id" element={<ProjectSinglePage />} />
+          <Route path="team" element={<TeamPage />} />
+          <Route path="team-single/:id" element={<TeamSinglePage />} />
+          <Route path="shop" element={<ShopPage />} />
+          <Route path='product-single/:id' element={<ProductSinglePage />} />
+          <Route path='cart' element={<CartPage />} />
+          <Route path='checkout' element={<CheckoutPage />} />
+          <Route path='order_received' element={<OrderRecived />} />
+          <Route path='pricing' element={<PricingPage />} />
+          <Route path='blog-single/:id' element={<BlogDetails />} />
+          <Route path='blog-single-left-sidebar/:id' element={<BlogDetailsLeftSiide />} />
+          <Route path='blog-single-fullwidth/:id' element={<BlogDetailsFull />} />
+          <Route path='blog' element={<BlogPage />} />
+          <Route path='blog-left-sidebar' element={<BlogPageLeft />} />
+          <Route path='blog-fullwidth' element={<BlogPageFullwidth />} />
+          <Route path='contact' element={<ContactPage />} />
+          <Route path='404' element={<ErrorPage />} />
+          <Route path='login' element={<LoginPage />} />
+          <Route path='register' element={<SignUpPage />} />
+          <Route path='forgot-password' element={<ForgotPassword />} />
+          <Route path="politicas" element={<PoliticasDetails />} />
+          <Route path="reglas-seguridad" element={<ReglasSeguridadDetails />} />
+        </Routes>
+      </BrowserRouter>
+
     </div>
   );
 }

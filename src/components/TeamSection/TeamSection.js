@@ -14,7 +14,7 @@ const ClickHandler = () => {
 const TeamSection = (props) => {
     const sliderSettings = {
         infinite: true,
-        speed: 3000,
+        speed: 4000,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,

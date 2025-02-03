@@ -23,7 +23,7 @@ const Hero = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 15000,
+        autoplaySpeed: 10000,
         fade: true,
     });
 
@@ -31,7 +31,7 @@ const Hero = () => {
       setSettings ((prev) => ({ ...prev, autoplaySpeed: 1000 }));
 
       const resetSpeed = setTimeout(() => { 
-        setSettings((prev) => ({ ...prev, autoplaySpeed: 15000 }));
+        setSettings((prev) => ({ ...prev, autoplaySpeed: 10000 }));
       }, 1000);
     
       return () => {

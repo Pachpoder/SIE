@@ -84,13 +84,13 @@ const HamburgerMenuPopup = ({ isOpen, toggleMenu }) => {
                 {/* Opciones */}
                 <div className="p-4">
                     <div style={styles.linkContainer} className="hover-link-container">
-                        <a href="https://tienda.mercafarma.com" style={styles.link} className="hover-link" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.mercafarma.com.gt/shop/" style={styles.link} className="hover-link" target="_blank" rel="noopener noreferrer">
                             Tienda Online
                         </a>
                     </div>
 
                     <div style={styles.linkContainer} className="hover-link-container">
-                        <a href="https://wrike.com" style={styles.link} className="hover-link" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.wrike.com/workspace.htm?acc=2864213#inbox" style={styles.link} className="hover-link" target="_blank" rel="noopener noreferrer">
                             Wrike
                         </a>
                     </div>
@@ -100,9 +100,14 @@ const HamburgerMenuPopup = ({ isOpen, toggleMenu }) => {
                             Edumercafarma
                         </a>
                     </div>
+                    <div style={styles.linkContainer} className="hover-link-container">
+                        <a href="https://www.mercafarmacupones.com/site/cupones/public/login" style={styles.link} className="hover-link" target="_blank" rel="noopener noreferrer">
+                            Cupones
+                        </a>
+                    </div>
 
                     {/* Botón de Login SIE */}
-                    <div style={styles.buttonPrimary} className="hover-button-sie" onClick={() => window.location.href = 'https://sie.mercafarma.com/login'}>
+                    <div style={styles.buttonPrimary} className="hover-button-sie" onClick={() => window.location.href = 'http://192.168.1.161/login'}>
                         Login SIE
                     </div>
                 </div>
