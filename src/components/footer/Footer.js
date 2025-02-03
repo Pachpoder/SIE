@@ -59,21 +59,21 @@ const Footer = (props) => {
                         <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
                             <div className="widget blog-widget">
                                 <div className="widget-title">
-                                    <h3>Recent Post</h3>
+                                    <h3>Políticas</h3>
                                 </div>
                                 <ul>
                                     <li>
-                                        <h4><Link onClick={ClickHandler} to="/blog-single/1">What are the pros and cons of becoming a consultant?</Link></h4>
-                                        <span><i className="fi flaticon-calendar"></i> 10.02.2022</span>
+                                        <h4><Link onClick={ClickHandler} to="/">Políticas de Vestimenta</Link></h4>
+                                        {/* <span><i className="fi flaticon-calendar"></i> 10.02.2022</span> */}
                                     </li>
                                     <li>
-                                        <h4><Link onClick={ClickHandler} to="/blog-single/1">We are able to give truly independent advice</Link></h4>
-                                        <span><i className="fi flaticon-calendar"></i> 10.02.2022</span>
+                                        <h4><Link onClick={ClickHandler} to="/">10 reglas de seguridad</Link></h4>
+                                        {/* <span><i className="fi flaticon-calendar"></i> 10.02.2022</span> */}
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
+                        {/* <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
                             <div className="widget link-widget">
                                 <div className="widget-title">
                                     <h3>Contacto</h3>
@@ -85,7 +85,7 @@ const Footer = (props) => {
                                     <li><Link onClick={() => window.open('https://tinyurl.com/29hub4qt', '_blank')} to="#">Solicitud RRHH</Link></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className="ft-shape">

@@ -15,7 +15,7 @@ const ContactInfo = (props) => {
                                     </div>
                                 </div>
                                 <div className="office-info-text">
-                                    <p>paseo cayala - Edificio R8, Blvr. Rafael Landivar, Cdad. de Guatemala.</p>
+                                    <p>Paseo Cayala - Edificio R8, Blvr. Rafael Landivar, Cdad. de Guatemala.</p>
                                 </div>
                             </div>
                         </div>

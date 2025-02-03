@@ -21,6 +21,7 @@ const Services = [
         sImgS: sImgS1,
         sTitle: 'Cápsula 5',
         description: 'DANDO FRUTO EN LOS MEDIOS DE COMUNICACIÓN',
+        videoUrl: 'https://drive.google.com/file/d/1KOA_wzkZE9sjwdc498gNTe2lYTukj735/view?usp=sharing', 
         des2: 'Lacus, etiam sed est eu tempus need Temer diam congue laoret.',
         des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
         image: frutocomunicacon,  // Aquí puedes agregar otra imagen si es necesario.
@@ -33,6 +34,7 @@ const Services = [
         sImgS: sImgS1,
         sTitle: 'Cápsula 1',
         description: 'CÓMO DAR FRUTO EN EL ÁREA DE EDUCACIÓN EN MI VIDA',
+        videoUrl: 'https://drive.google.com/file/d/1RyvfLBq0b8UH24VWG9igaqPRF9hUynf3/view?usp=sharing',
         des2: 'Lacus, etiam sed est eu tempus need Temer diam congue laoret.',
         des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
         image: frutoarea,
@@ -45,6 +47,7 @@ const Services = [
         sImgS: sImgS2,
         sTitle: 'Cápsula 2',
         description: 'CÓMO DAR FRUTO EN EL ÁREA DE EDUCACIÓN EN MI VIDA',
+        videoUrl: 'https://drive.google.com/file/d/1vZL8hKy8hk7lwc2jRVqQa4ar6gGqD_fU/view?usp=sharing',
         des2: 'Lacus, etiam sed est eu tempus need Temer diam congue laoret.',
         des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
         image: frutoarea,  // Otra imagen opcional
@@ -57,6 +60,7 @@ const Services = [
         sImgS: sImgS2,
         sTitle: 'Cápsula 3',
         description: 'CÓMO DAR FRUTO EN EL ÁREA DE EDUCACIÓN EN MI VIDA',
+        videoUrl: 'https://drive.google.com/file/d/1AHFT59mdSMUsDT_cwEm25a-ra_RvySUX/view?usp=sharing',
         des2: 'Lacus, etiam sed est eu tempus need Temer diam congue laoret.',
         des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
         image: frutoarea,  // Otra imagen opcional

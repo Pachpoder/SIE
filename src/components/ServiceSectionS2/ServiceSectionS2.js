@@ -83,7 +83,14 @@ const ServiceSectionS2 = () => {
                                         </div>
                                         <h2>{service.sTitle}</h2>
                                         <p>{service.description}</p>
-                                        <Link onClick={ClickHandler} to={`/service-single/${service.Id}`}>Details</Link>
+                                        <a 
+                                            href={service.videoUrl} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            onClick={() => window.scrollTo(10, 0)}
+                                        >
+                                            Ver Cápsula
+                                        </a>
                                     </div>
                                 </div>
                             </div>
