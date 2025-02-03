@@ -362,7 +362,7 @@
   }
 
   .wpo-lower-footer{
-      text-align: left;
+      text-align: center;
 
       @media(max-width:991px){
          text-align: center;
@@ -370,7 +370,7 @@
       ul{
           li{
               a{
-                  color: $theme-primary-color;
+                  color: #ffff;
               }
           }
       }

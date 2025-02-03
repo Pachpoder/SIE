@@ -25,7 +25,7 @@ const BlogSection = () => {
                                     </div>
                                     <div className="blog-content">
                                         <ul>
-                                            <li><a href="blog-single.html">{blog.create_at}</a></li>
+                                            {/* <li><a href="blog-single.html">{blog.create_at}</a></li> */}
                                             <li>{blog.author}</li>
                                         </ul>
                                         <h2><Link >{blog.title}</Link></h2>

@@ -67,15 +67,19 @@ const ServiceSectionS2 = () => {
     return (
         <section className="wpo-service-section-s2 section-padding">
             <div className="container">
-                <SectionTitle subTitle={'Our Services'} Title={'All Consoel Solution'} />
+                <SectionTitle subTitle={'Gracias Señor'} Title={'Cápsulas Mercafarma'} />
                 <div className="row-grid wpo-service-slider-s2">
                     <Slider {...settings}>
                         {Services.map((service, srv) => (
                             <div className="grid" key={srv}>
                                 <div className="wpo-service-item">
                                     <div className="wpo-service-text">
-                                        <div className="service-icon">
-                                            <i className={`fi ${service.icon}`}></i>
+                                        <div className="service-icon" style={iconContainerStyle}>
+                                            {service.image ? (
+                                                <img src={service.image} alt={service.sTitle} style={imageStyle} />
+                                            ) : (
+                                                <i className={`fi ${service.icon}`}></i>
+                                            )}
                                         </div>
                                         <h2>{service.sTitle}</h2>
                                         <p>{service.description}</p>
@@ -90,5 +94,24 @@ const ServiceSectionS2 = () => {
         </section>
     );
 }
+
+const iconContainerStyle = {
+    width: '100px',
+    height: '100px',
+    margin: '0 auto',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: '15px',
+    borderRadius: '50%',
+    backgroundColor: '#f5f5f5'
+};
+
+const imageStyle = {
+    maxWidth: '80%',
+    maxHeight: '80%',
+    objectFit: 'contain',
+    borderRadius: '50%'
+};
 
 export default ServiceSectionS2;

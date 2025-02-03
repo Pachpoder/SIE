@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Logo from '../../images/logo.png'
+import Logo from '../../images/logo-mercafarma.png'
 import shape from '../../images/ft-shape.png'
 
 
@@ -20,29 +20,24 @@ const Footer = (props) => {
                         <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
                             <div className="widget about-widget">
                                 <div className="logo widget-title">
-                                    <img src={Logo} alt="logo"/>
+                                    <img src={Logo} alt="logo" />
                                 </div>
-                                <p>Many desktop publishing packages web page editors now is use model search for many
-                                    web sites.</p>
+                                <p><b>Fundada en 2005</b> | Líder en soluciones farmacéuticas en Guatemala.
+                                    Innovación, liderazgo y compromiso con la salud.</p>
                                 <ul>
                                     <li>
-                                        <Link onClick={ClickHandler} to="/">
+                                        <Link onClick={ClickHandler} to="https://www.facebook.com/mkfgt/?locale=es_LA">
                                             <i className="ti-facebook"></i>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link onClick={ClickHandler} to="/">
-                                            <i className="ti-twitter-alt"></i>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link onClick={ClickHandler} to="/">
+                                        <Link onClick={ClickHandler} to="https://www.maxicrez.com/">
                                             <i className="ti-instagram"></i>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link onClick={ClickHandler} to="/">
-                                            <i className="ti-google"></i>
+                                        <Link onClick={ClickHandler} to="https://www.youtube.com/channel/UC3YNfF1LZkQh9ehELZPu_HQ">
+                                            <i className="ti-youtube"></i>
                                         </Link>
                                     </li>
                                 </ul>
@@ -54,11 +49,10 @@ const Footer = (props) => {
                                     <h3>Soporte</h3>
                                 </div>
                                 <ul>
-                                    <li><Link onClick={ClickHandler} to="/about">Centro de Asistencia IT</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/service">Pedidos Personales</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/project">Buzon de Quejas y Sugerencias</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/contact">Solicitud RRHH</Link></li>
-                                    {/* <li><Link onClick={ClickHandler} to="/about">Vision & Values</Link></li> */}
+                                    <li><Link onClick={() => window.open('https://www.wrike.com/workspace.htm?acc=2864213#/forms?formid=1367318', '_blank')} to="#">Centro de Asistencia IT</Link></li>
+                                    <li><Link onClick={() => window.open('https://www.wrike.com/frontend/requestforms/index.html?token=eyJhY2NvdW50SWQiOjI4NjQyMTMsInRhc2tGb3JtSWQiOjczNTE4MX0JNDgxNzMxNDkzOTQ4OQljMDFjNjJmMTFlMGJlMTkzNjM0MmQ1ODZkNjZlZWNmMDI5OTAyZjI1Mzk5ODlhM2EzMjQ2ZjQ5ZTM0NGJlZmRi', '_blank')} to="#">Pedidos Personales</Link></li>
+                                    <li><Link onClick={() => window.open('https://www.wrike.com/frontend/requestforms/index.html?token=eyJhY2NvdW50SWQiOjI4NjQyMTMsInRhc2tGb3JtSWQiOjY4MTUxMX0JNDgwNjU4MDEzNDUzOAlkMTk2MTUxZGZhYjk1OTJiMTc5ODI3OTc2NTE2NTQ1MGU5ZGE0ZjVjYmFjZjBjOTBhNTQ1YzAxZTE3YWEwMWEx', '_blank')} to="#">Buzón de Quejas y Sugerencias</Link></li>
+                                    <li><Link onClick={() => window.open('https://tinyurl.com/29hub4qt', '_blank')} to="#">Solicitud RRHH</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -80,27 +74,22 @@ const Footer = (props) => {
                             </div>
                         </div>
                         <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
-                            <div className="widget newsletter-widget">
+                            <div className="widget link-widget">
                                 <div className="widget-title">
-                                    <h3>Newsletter</h3>
+                                    <h3>Contacto</h3>
                                 </div>
-                                <p>Many desktop publi’s shing packages web
-                                    page editors now is use sites.</p>
-                                <form onSubmit={SubmitHandler}>
-                                    <div className="input-1">
-                                        <input type="email" className="form-control" placeholder="Email Address *"
-                                            required/>
-                                    </div>
-                                    <div className="submit clearfix">
-                                        <button type="submit"><i className="fi flaticon-send"></i></button>
-                                    </div>
-                                </form>
+                                <ul>
+                                    <li><Link onClick={() => window.open('https://www.wrike.com/workspace.htm?acc=2864213#/forms?formid=1367318', '_blank')} to="#">Centro de Asistencia IT</Link></li>
+                                    <li><Link onClick={() => window.open('https://www.wrike.com/frontend/requestforms/index.html?token=eyJhY2NvdW50SWQiOjI4NjQyMTMsInRhc2tGb3JtSWQiOjczNTE4MX0JNDgxNzMxNDkzOTQ4OQljMDFjNjJmMTFlMGJlMTkzNjM0MmQ1ODZkNjZlZWNmMDI5OTAyZjI1Mzk5ODlhM2EzMjQ2ZjQ5ZTM0NGJlZmRi', '_blank')} to="#">Pedidos Personales</Link></li>
+                                    <li><Link onClick={() => window.open('https://www.wrike.com/frontend/requestforms/index.html?token=eyJhY2NvdW50SWQiOjI4NjQyMTMsInRhc2tGb3JtSWQiOjY4MTUxMX0JNDgwNjU4MDEzNDUzOAlkMTk2MTUxZGZhYjk1OTJiMTc5ODI3OTc2NTE2NTQ1MGU5ZGE0ZjVjYmFjZjBjOTBhNTQ1YzAxZTE3YWEwMWEx', '_blank')} to="#">Buzón de Quejas y Sugerencias</Link></li>
+                                    <li><Link onClick={() => window.open('https://tinyurl.com/29hub4qt', '_blank')} to="#">Solicitud RRHH</Link></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="ft-shape">
-                    <img src={shape} alt="shape"/>
+                    <img src={shape} alt="shape" />
                 </div>
                 <div className="ft-shape-s1">
                     <svg width="254.000000pt" height="257.000000pt" viewBox="0 0 254.000000 257.000000"
@@ -124,18 +113,8 @@ const Footer = (props) => {
                     <div className="row align-items-center">
                         <div className="col col-lg-6 col-md-12 col-12">
                             <ul>
-                                <li>Copyright &copy; 2022 //  All Right Reserved by <Link onClick={ClickHandler} to="/">Consoel.</Link></li>
+                                <li>Copyright &copy; 2025 //  Todos los derechos reservados por <Link onClick={ClickHandler} to="https://www.mercafarma.com.gt/" target='_blanck'><b>Mercafarma</b></Link></li>
                             </ul>
-                        </div>
-                        <div className="col col-lg-6 col-md-12 col-12">
-                            <div className="link">
-                                <ul>
-                                    <li><Link onClick={ClickHandler} to="/about">Vision & Values</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/blog">History</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/service">Awards</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/project-single">Leadership</Link></li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>

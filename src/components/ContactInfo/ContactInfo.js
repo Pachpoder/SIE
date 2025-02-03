@@ -1,6 +1,5 @@
 import React from "react";
-import shape from '../../images/ct-shape.png'
-
+import shape from '../../images/ct-shape.png';
 
 const ContactInfo = (props) => {
     return (
@@ -9,44 +8,50 @@ const ContactInfo = (props) => {
                 <div className="office-info">
                     <div className="row">
                         <div className="col col-xl-4 col-lg-6 col-md-6 col-12">
-                            <div className="office-info-item">
+                            <div className="office-info-item" style={itemStyle}>
                                 <div className="office-info-icon">
                                     <div className="icon">
                                         <i className="fi flaticon-place"></i>
                                     </div>
                                 </div>
                                 <div className="office-info-text">
-                                    <p>1489 Langley Ave
-                                        Grand Forks Afb, North.</p>
-                                    <span>USA, Office AddRESS</span>
+                                    <p>paseo cayala - Edificio R8, Blvr. Rafael Landivar, Cdad. de Guatemala.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="col col-xl-4 col-lg-6 col-md-6 col-12">
-                            <div className="office-info-item active">
+                            <div className="office-info-item active" style={itemStyle}>
                                 <div className="office-info-icon">
                                     <div className="icon">
                                         <i className="fi flaticon-phone-call"></i>
                                     </div>
                                 </div>
                                 <div className="office-info-text">
-                                    <p>+1 800 123 456 789</p>
-                                    <p>+1 800 123 654 987</p>
-                                    <span>call us today</span>
+                                    
+                                    <a href="https://wa.me/50248811026" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                        <p>+502 4881 1026</p>
+                                    </a>
+                                    <a href="https://wa.me/50248811026" target="_blank" rel="noopener noreferrer">
+                                        <button style={buttonStyle}
+                                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#c83a32'}
+                                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#ab271f'}
+                                        >
+                                            WhatsApp Corporativo
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div className="col col-xl-4 col-lg-6 col-md-6 col-12">
-                            <div className="office-info-item">
+                            <div className="office-info-item" style={itemStyle}>
                                 <div className="office-info-icon">
                                     <div className="icon">
                                         <i className="fi flaticon-email"></i>
                                     </div>
                                 </div>
                                 <div className="office-info-text">
-                                    <p>consoel@gmail.com</p>
-                                    <p>info724@gmail.com</p>
-                                    <span>EMAIL ADDRESS</span>
+                                    <p>recursoshumanos@
+                                        grupomercafarma.com</p>
                                 </div>
                             </div>
                         </div>
@@ -54,10 +59,35 @@ const ContactInfo = (props) => {
                 </div>
             </div>
             <div className="ct-shape">
-                <img src={shape} alt="shape"/>
+                <img src={shape} alt="shape" />
             </div>
         </section>
     );
 }
+
+const itemStyle = {
+    height: '300px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center',
+    padding: '20px',
+    border: '1px solid rgba(255, 92, 0, 0.5)',
+    borderRadius: '12px'
+};
+
+const buttonStyle = {
+    backgroundColor: '#ab271f',
+    color: '#fff',
+    border: 'none',
+    padding: '10px 20px',
+    borderRadius: '8px',
+    fontWeight: 'bold',
+    fontSize: '14px',
+    cursor: 'pointer',
+    marginTop: '10px',
+    transition: 'background-color 0.3s ease'
+};
 
 export default ContactInfo;

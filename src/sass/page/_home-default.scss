@@ -1673,7 +1673,7 @@
                     .fi {
                         &:before {
                             font-size: 55px;
-                            color: $theme-primary-color;
+                            color: #ab271f;
                         }
                     }
                 }
@@ -1699,13 +1699,13 @@
             }
 
             &.active {
-                background: $theme-primary-color;
+                // background: $theme-primary-color;
 
                 .office-info-icon {
                     .icon {
                         .fi {
                             &:before {
-                                color: $white;
+                                color: #ab271f;
                             }
                         }
                     }
