@@ -1,50 +1,53 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import hero1 from '../../images/slider/prueba-intranet-men.png'
-import hero2 from '../../images/slider/prueba-intra.png'
-// import hero2 from '../../images/slider/prueba-intra.png'
-import hero3 from '../../images/slider/Hero-banner4.png'
-import hero4 from '../../images/slider/tren-hero.png'
-
-
-// ARREGALR ESTO EL CAMBIO DE VELOCIDAD NO FUNCIONA
-
+import hero1 from '../../images/slider/prueba-intranet-men.png';
+import hero2 from '../../images/slider/prueba-intra.png';
+import hero3 from '../../images/slider/Hero-banner4.png';
+import hero4 from '../../images/slider/tren-hero.png';
 
 const Hero = () => {
+    const sliderRef = useRef(null);
+    const [initialized, setInitialized] = useState(false);
 
-    const [settings, setSettings] = useState({
+    useEffect(() => {
+        if (sliderRef.current && !initialized) {
+            // Forzar reinicio del autoplay sincronizado después de montaje
+            sliderRef.current.slickPause();
+            setTimeout(() => {
+                sliderRef.current.slickPlay();
+                setInitialized(true);
+            }, 100); // Pequeño retraso para asegurar la sincronización inicial
+        }
+    }, [initialized]);
+
+    const settings = {
         dots: false,
         arrows: true,
-        speed: 1200,
+        speed: 1500,          // Velocidad de transición de 1.5 segundos
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 10000,
+        autoplaySpeed: 15000,  // 10 segundos entre cada cambio de slide
         fade: true,
-    });
+        infinite: true,
+        beforeChange: (current, next) => {
+            if (!initialized) {
+                sliderRef.current.slickPause();
+                setTimeout(() => {
+                    sliderRef.current.slickPlay();
+                }, 10000); // Reinicio exacto para el primer cambio
+            }
+        }
+    };
 
-    useEffect(() => {
-      setSettings ((prev) => ({ ...prev, autoplaySpeed: 1000 }));
-
-      const resetSpeed = setTimeout(() => { 
-        setSettings((prev) => ({ ...prev, autoplaySpeed: 10000 }));
-      }, 1000);
-    
-      return () => {
-        clearTimeout(resetSpeed);
-      }
-    }, []);
-    
-    
-    
     return (
         <section className="hero hero-slider-wrapper hero-style-1">
             <div className="hero-slider">
-                <Slider {...settings}>
+                <Slider {...settings} ref={sliderRef}>
                     <div className="slide">
                         <div className="container">
                             <div className="row">
@@ -58,18 +61,8 @@ const Hero = () => {
                                     <div className="slide-subtitle">
                                         <p>Somos una familia líder en el mercado farmacéutico, comprometidos con la calidad, innovación y excelencia. Cada colaborador desempeña un papel fundamental en nuestra misión de mejorar la salud y ofrecer productos y servicios de alta calidad.</p>
                                     </div>
-                                    {/* <div className="btns">
-                                        <a
-                                            href="https://www.mercafarma.com.gt/"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="theme-btn"
-                                        >
-                                            www.mercafarma.com.gt
-                                        </a>
-                                    </div> */}
                                     <div className="slider-pic">
-                                        <img src={hero1} alt="" />
+                                        <img src={hero1} alt="Slide 1" />
                                     </div>
                                 </div>
                             </div>
@@ -88,11 +81,8 @@ const Hero = () => {
                                     <div className="slide-subtitle">
                                         <p>Nuestra pasión por lo que hacemos nos une como equipo, impulsa la excelencia que transforma y nos motiva a alcanzar metas estratégicas que generan impacto y valor cada día.</p>
                                     </div>
-                                    {/* <div className="btns">
-                                        <Link to="/about" className="theme-btn">DIRIGIRSE A SIE</Link>
-                                    </div> */}
                                     <div className="slider-pic">
-                                        <img src={hero2} alt="" />
+                                        <img src={hero2} alt="Slide 2" />
                                     </div>
                                 </div>
                             </div>
@@ -103,7 +93,7 @@ const Hero = () => {
                             <div className="row">
                                 <div className="col col-lg-6 col-md-8 col-sm-12 slide-caption">
                                     <div className="slide-title-sub">
-                                        <h5>Orgullosos de ser Mercafarma: </h5>
+                                        <h5>Orgullosos de ser Mercafarma:</h5>
                                     </div>
                                     <div className="slide-title">
                                         <h2>Innovación, liderazgo y compromiso</h2>
@@ -111,11 +101,8 @@ const Hero = () => {
                                     <div className="slide-subtitle">
                                         <p>Formamos parte de una empresa que reconoce y valora tu talento. En <b>MERCAFARMA</b>, la innovación, el liderazgo y el compromiso son pilares fundamentales que nos inspiran a superar desafíos, generar impacto positivo y alcanzar nuevas metas cada día.</p>
                                     </div>
-                                    {/* <div className="btns">
-                                        <Link to="/about" className="theme-btn">DIRIGIRSE A SIE</Link>
-                                    </div> */}
                                     <div className="slider-pic">
-                                        <img src={hero3} alt="" />
+                                        <img src={hero3} alt="Slide 3" />
                                     </div>
                                 </div>
                             </div>
@@ -134,11 +121,8 @@ const Hero = () => {
                                     <div className="slide-subtitle">
                                         <p>Súbete al tren de <b>MERCAFARMA</b> y seamos juntos la fuerza que transforma, innova y lidera el camino hacia un mañana más eficiente y extraordinario.</p>
                                     </div>
-                                    {/* <div className="btns">
-                                        <Link to="/about" className="theme-btn">DIRIGIRSE A SIE</Link>
-                                    </div> */}
                                     <div className="slider-pic">
-                                        <img src={hero4} alt="" />
+                                        <img src={hero4} alt="Slide 4" />
                                     </div>
                                 </div>
                             </div>
@@ -147,7 +131,7 @@ const Hero = () => {
                 </Slider>
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default Hero;

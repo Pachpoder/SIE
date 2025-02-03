@@ -63,9 +63,18 @@ const Footer = (props) => {
                                     <h3>Políticas</h3>
                                 </div>
                                 <ul>
-                                    {/* <li>
-                                        <h4><Link onClick={ClickHandler} to="/politicas">Políticas de vestimenta</Link></h4>
-                                    </li> */}
+                                    <li>
+                                        <h4>
+                                            <a
+                                                href="/docs/Codigo%20de%20vestimenta_250203_114336.pdf"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                Código de vestimenta
+                                            </a>
+                                        </h4>
+                                    </li>
+
                                     <li>
                                         <h4><Link onClick={ClickHandler} to="/reglas-seguridad">10 reglas de oro Ciberseguridad</Link></h4>
                                     </li>
