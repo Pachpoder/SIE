@@ -67,6 +67,19 @@ const Services = [
         ssImg1: sSingleimg1,
         ssImg2: sSingleimg2,
     },
+    {
+        Id: '5',
+        sImg: simg2,
+        sImgS: sImgS2,
+        sTitle: 'Cápsula 4',
+        description: 'CÓMO DAR FRUTO EN EL ÁREA DE EDUCACIÓN EN MI VIDA',
+        videoUrl: 'https://drive.google.com/file/d/1RSNInLy1aXG0-vouP8EEMq2EiB8gCN5K/view?usp=sharing',
+        des2: 'Lacus, etiam sed est eu tempus need Temer diam congue laoret.',
+        des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
+        image: frutoarea,  // Otra imagen opcional
+        ssImg1: sSingleimg1,
+        ssImg2: sSingleimg2,
+    },
 ];
 
 export default Services;
