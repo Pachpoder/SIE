@@ -134,7 +134,7 @@
 
         h4 {
             font-size: 21px;
-            color: #ab281f;
+            color: white;
             font-family: $base-font;
 
             @media(max-width:1200px) {
@@ -174,7 +174,7 @@
         }
 
         b {
-            color: $dark-gray2;
+            color: white;
         }
 
         p {
@@ -778,7 +778,7 @@
         .wpo-team-item {
             text-align: center;
             padding: 30px;
-            background: $section-bg-color;
+            background: #7a7a7a;
             border-radius: 50%;
             position: relative;
             transition: all .3s;
@@ -789,7 +789,7 @@
             .wpo-team-img {
                 overflow: hidden;
                 border-radius: 50%;
-                border: 5px solid $white;
+                border: 5px solid #7a7a7a;
                 position: relative;
 
                 img {
@@ -879,7 +879,7 @@
                     transform: translateY(0);
                 }
 
-                background: transparentize(#df0030, .8);
+                background: transparentize(#7a7a7a, .8);
             }
         }
 
@@ -1597,7 +1597,7 @@
 /* 3.11 contact-info-section */
 
 .contact-info-section {
-    background: #18252f;
+    // background: #18252f;
     position: relative;
     z-index: 1;
     overflow: hidden;

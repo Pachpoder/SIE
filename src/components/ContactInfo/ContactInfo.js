@@ -83,7 +83,8 @@ const itemStyle = {
     textAlign: 'center',
     padding: '20px',
     border: '1px solid rgba(255, 92, 0, 0.5)',
-    borderRadius: '12px'
+    borderRadius: '12px',
+    backgroundColor: '#7a7a7a'
 };
 
 const buttonStyle = {

@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 .wpo-site-footer,
 .wpo-site-footer-s2{
-    background: $dark-gray2;
+    background: #303030;
     position: relative;
     font-size: 15px;
     overflow: hidden;
@@ -271,7 +271,7 @@
     .wpo-lower-footer{
         text-align: center;
         position: relative;
-        background: #18252f;
+        background: black;
     
         .row{
             padding: 20px 0;
@@ -336,7 +336,7 @@
       z-index: -1;
 
       svg{
-          fill: $theme-primary-color;
+          fill: #ab281f;
       }
   }
   .ft-shape-s2{
@@ -344,9 +344,10 @@
       right: -60px;
       bottom: -70px;
       z-index: -1;
+     
 
       svg{
-          fill: $theme-primary-color;
+          fill: #ab281f;
       }
   }
 

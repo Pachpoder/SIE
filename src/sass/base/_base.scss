@@ -19,7 +19,7 @@ body {
 
 p {
     font-size: 16px;
-    color: $body-color;
+    color: white;
     line-height: 1.8em;
 }
 
@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: $heading-color;
+    color: white;
     font-family: $heading-font;
     font-weight: 600;
 }
@@ -80,6 +80,7 @@ img{
 
 .section-padding {
     padding: 120px 0;
+    background-color: black;
 
     @include media-query( 991px ) {
         padding: 90px 0;

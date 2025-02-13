@@ -102,7 +102,7 @@ const styles = {
     ol: {
         textAlign: 'justify',
         lineHeight: '1.8',
-        color: '#333',
+        color: 'white',
         marginTop: '20px',
         fontSize: '18px',
     },
@@ -112,12 +112,12 @@ const styles = {
     title: {
         fontWeight: 'bold',
         fontSize: '20px',
-        color: '#0056b3',
+        color: 'white',
     },
     ul: {
         marginTop: '10px',
         marginLeft: '20px',
-        color: '#666',
+        color: 'white',
     },
 };
 

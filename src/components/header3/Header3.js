@@ -66,7 +66,7 @@ const Header3 = (props) => {
                                         <li>
                                             <Link
                                                 onClick={() => handleSectionClick('banner-section')}
-                                                to="/#banner-section"
+                                                to="/banner-section"
                                                 className="nav-link"
                                             >
                                                 Inicio
@@ -75,43 +75,34 @@ const Header3 = (props) => {
                                         <li>
                                             <Link
                                                 onClick={() => handleSectionClick('about-section')}
-                                                to="/#about-section"
+                                                to="/about-section"
                                                 className="nav-link"
                                             >
-                                                Historia
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                                onClick={() => handleSectionClick('values-section')}
-                                                to="/#values-section"
-                                                className="nav-link"
-                                            >
-                                                Valores y políticas
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link
-                                                onClick={() => handleSectionClick('brands-section')}
-                                                to="/#brands-section"
-                                                className="nav-link"
-                                            >
-                                                Plataformas
+                                                Mercafarma
                                             </Link>
                                         </li>
                                         <li>
                                             <Link
                                                 onClick={() => handleSectionClick('capsules-section')}
-                                                to="/#capsules-section"
+                                                to="/capsules-section"
                                                 className="nav-link"
                                             >
-                                                Páginas Web
+                                                Crecimiento Personal
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link
+                                                onClick={() => handleSectionClick('capsules-section')}
+                                                to="/capsules-section"
+                                                className="nav-link"
+                                            >
+                                                Otros Sitios Web
                                             </Link>
                                         </li>
                                         <li>
                                             <Link
                                                 onClick={() => handleSectionClick('contact-section')}
-                                                to="/#contact-section"
+                                                to="/contact-section"
                                                 className="nav-link"
                                             >
                                                 Contacto

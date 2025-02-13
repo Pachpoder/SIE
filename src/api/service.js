@@ -11,7 +11,7 @@ import sImgS4 from '../images/service-single/cuarta-politica.jpg'
 import sSingleimg1 from '../images/service-single/2.jpg'
 import sSingleimg2 from '../images/service-single/3.jpg'
 
-import frutoarea from '../images/service/fruto/fruto-area-educacion-vida.webp';
+import frutoarea from '../images/service/fruto/iconoCapuslas.webp';
 import frutocomunicacon from '../images/service/fruto/fruto-medios-comunicacion.webp';
 
 const Services = [
@@ -24,7 +24,7 @@ const Services = [
         videoUrl: 'https://drive.google.com/file/d/1KOA_wzkZE9sjwdc498gNTe2lYTukj735/view?usp=sharing', 
         des2: 'Lacus, etiam sed est eu tempus need Temer diam congue laoret.',
         des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
-        image: frutocomunicacon,  // Aquí puedes agregar otra imagen si es necesario.
+        image: frutoarea,  // Aquí puedes agregar otra imagen si es necesario.
         ssImg1: sSingleimg1,
         ssImg2: sSingleimg2,
     },

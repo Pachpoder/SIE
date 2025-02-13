@@ -27,7 +27,7 @@
 		h3 {
 			font-size: 25px;
 			font-size: calc-rem-value(25);
-			color: $dark-gray;
+			color: white;
 			margin: 0 0 1.3em;
 			position: relative;
 			text-transform: capitalize;
@@ -39,6 +39,7 @@
 
 	> .widget + .widget {
 		margin-top: 65px;
+		background-color: #303030;
 	}
 
 
@@ -46,6 +47,7 @@
 	.search-widget {
 		form div {
 			position: relative;
+			
 		}
 
 		input {
@@ -87,7 +89,7 @@
 	/*** about-widget ***/
 	.about-widget {
 		text-align: center;
-		background-color: $section-bg-color;
+		background-color: #303030 ;
 		padding: 45px;
 		position: relative;
 		z-index: 1;
@@ -288,7 +290,7 @@
 
 		.post h4 a {
 			display: inline-block;
-			color: $heading-color;
+			color: white;
 		}
 
 		.post h4 a:hover {

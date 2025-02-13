@@ -14,7 +14,7 @@ const PageTitle = (props) => {
                             <h2>{props.pageTitle}</h2>
                             <ol className="breadcrumb">
                                 <li><Link to="/">Inicio</Link></li>
-                                <li><span>{props.pagesub}</span></li>
+                                {/* <li><span>{props.pagesub}</span></li> */}
                             </ol>
                         </div>
                     </div>

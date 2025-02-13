@@ -16,9 +16,9 @@ const HomePage = () => {
             <Navbar hclass={'wpo-header-style-1'} topbarNone={'topbar-none'} />
             <section id="banner-section"><Hero /></section> {/* BANNER */}
             <section id="about-section"><About abimg={abimg} /></section> {/* HISTORIA */}
-            <section id="values-section" style={{ paddingBottom: '200px' }}><BlogSection /></section> {/* VALORES Y POLITICAS */}
-            <section id="brands-section"><TeamSection /></section> {/* MARCAS */}
+            <section id="values-section" style={{ paddingBottom: '200px', backgroundColor: '#000' }}><BlogSection /></section> {/* VALORES Y POLITICAS */}
             <section id="capsules-section"><ServiceSectionS2 /></section> {/* CAPSULAS */}
+            <section id="brands-section"><TeamSection /></section> {/* MARCAS */}
             <section id="contact-section"><ContactInfo /></section> {/* CONTACTO */}
             <Footer />
             <Scrollbar />

@@ -1,7 +1,7 @@
-import timg1 from '../images/team/logo-maxicrez.png'
-import timg2 from '../images/team/logo-perenterol1.png'
-import timg3 from '../images/team/logo-diabelife1.png'
-import timg4 from '../images/team/logo-merca.png'
+import timg1 from '../images/team/icono-maximo.webp'
+import timg2 from '../images/team/icono-perenterol.webp'
+import timg3 from '../images/team/icono-diabelife.webp'
+import timg4 from '../images/team/icono-mercafarma.webp'
 import timg5 from '../images/team/logo-diabelife1.png'
 
 

@@ -5,8 +5,8 @@ const SectionTitle = (props) => {
         <div className="row">
             <div className="col-12">
                 <div className="wpo-section-title">
-                    <span>{props.subTitle}</span>
                     <h2>{props.Title}</h2>
+                    <span>{props.subTitle}</span>
                 </div>
             </div>
         </div>

@@ -51,7 +51,7 @@ const TeamSection = (props) => {
                     <div className="col-12">
                         <div className="wpo-section-title">
                             <span></span>
-                            <h2>Marcas</h2>
+                            <h2>¡Visita las páginas web de nuestras marcas!</h2>
                         </div>
                     </div>
                 </div>

@@ -4,10 +4,10 @@ export function validateIdValores(id) {
         case 1:
              return (
                  <>
-                    <section className="mercafarma-mission" style={{textAlign: 'justify'}}>
-                        <h1>La Misión de MERCAFARMA: <br/></h1>
+                    <section className="mercafarma-mission" style={{textAlign: 'justify', color: 'white'}}>
+                        <h1> <b>La Misión de MERCAFARMA:</b> <br/></h1>
                         <br/>
-                        <h2>Un Compromiso con la Excelencia y el Bienestar</h2>
+                        <h2><b>Un Compromiso con la Excelencia y el Bienestar</b></h2>
                         <br/>
                         <p>
                             En MERCAFARMA, nuestra misión es el corazón de nuestra identidad corporativa. Desde nuestra fundación, nos hemos comprometido a desarrollar una gestión eficiente, basada en principios y valores sólidos, que nos impulsa a ofrecer productos de calidad y un servicio al cliente excepcional.

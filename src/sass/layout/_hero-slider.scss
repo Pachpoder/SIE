@@ -184,7 +184,7 @@
 .hero-style-1 {
 	height: 1000px;
 	position: relative;
-    background: #1a374c;
+    background: black;
 	
 
 
@@ -321,6 +321,9 @@
 		}
 
 		img{
+			width: 699px;
+			// height: 693px;
+			object-fit: cover;
 			@include media-query(1200px) {
 				max-width: 70%;
 				margin-left: auto;

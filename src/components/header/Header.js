@@ -35,10 +35,10 @@ const Header = (props) => {
                                 <div id="navbar" className="navigation-holder" style={centerMenuStyle}>
                                     <ul className="nav navbar-nav mb-2 mb-lg-0">
                                         <li><Link to="banner-section" smooth={true} duration={500}>Inicio</Link></li>
-                                        <li><Link to="about-section" smooth={true} duration={500}>Historia</Link></li>
-                                        <li><Link to="values-section" smooth={true} duration={500}>Principios</Link></li>
-                                        <li><Link to="brands-section" smooth={true} duration={500}>Marcas</Link></li>
-                                        <li><Link to="capsules-section" smooth={true} duration={500}>Cápsulas</Link></li>
+                                        <li><Link to="about-section" smooth={true} duration={500}>Mercafarma</Link></li>
+                                        {/* <li><Link to="values-section" smooth={true} duration={500}>Principios</Link></li> */}
+                                        <li><Link to="capsules-section" smooth={true} duration={500}>Crecimiento Personal</Link></li>
+                                        <li><Link to="brands-section" smooth={true} duration={500}>Otros Sitios Web</Link></li>
                                         <li><Link to="contact-section" smooth={true} duration={500}>Contacto</Link></li>
                                     </ul>
                                 </div>

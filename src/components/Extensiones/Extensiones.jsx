@@ -87,7 +87,7 @@ const Extensiones = () => {
       right: "10px", // Botón pegado al lado derecho
       transform: "translateY(-50%)", // Ajuste para centrar completamente
       zIndex: 1000,
-      backgroundColor: "#0056b3", // Color azul adaptado al diseño
+      backgroundColor: " rgba(21, 98, 39)", // Color azul adaptado al diseño
       color: "white",
       border: "none",
       padding: "15px",
@@ -113,7 +113,7 @@ const Extensiones = () => {
       left: showSidebar ? 0 : "-350px", // Mostrar desde el lado izquierdo
       height: "100%",
       width: "350px",
-      backgroundColor: "#fefefe",
+      backgroundColor: "#303030",
       zIndex: 999,
       overflowY: "auto",
       padding: "20px",
