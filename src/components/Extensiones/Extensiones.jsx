@@ -85,14 +85,14 @@ const Extensiones = () => {
   const styles = {
     button: {
       position: "fixed",
-      top: "65%",
+      top: "clamp(70%, 70vh, 70%)", // Se mantiene en el 65% de la pantalla de forma adaptable
       right: "10px",
       transform: "translateY(-50%)",
       zIndex: 1000,
       backgroundColor: "#00ADB5",
       color: "white",
       border: "none",
-      padding: "clamp(10px, 2vw, 15px)", // Adaptable en diferentes tamaños de pantall
+      padding: "clamp(10px, 2vw, 15px)", // Adaptable en diferentes tamaños de pantalla
       borderRadius: "50%",
       boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.2)",
       cursor: "pointer",
