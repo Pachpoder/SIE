@@ -92,7 +92,7 @@ const Extensiones = () => {
       backgroundColor: "#00ADB5",
       color: "white",
       border: "none",
-      padding: "clamp(10px, 2vw, 15px)", // Adaptable en diferentes tamaños de pantalla
+      padding: "clamp(10px, 2vw, 15px)", // Adaptable en diferentes tamaños de pantall
       borderRadius: "50%",
       boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.2)",
       cursor: "pointer",
