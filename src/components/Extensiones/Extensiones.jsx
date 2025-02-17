@@ -40,9 +40,9 @@ const Extensiones = () => {
         }
 
         // Si no hay caché válida, realizar la solicitud a la API
-        // const response = await fetch("http://192.168.1.161:8000/api/extensiones");
+        const response = await fetch("http://192.168.1.161:8000/api/extensiones");
         // extensiones test
-        const response = await fetch("http://sie.test/api/extensiones");
+        // const response = await fetch("http://sie.test/api/extensiones");
         const data = await response.json();
 
         // Almacenar los datos en la caché con un timestamp
