@@ -40,9 +40,9 @@ const Extensiones = () => {
         }
 
         // Si no hay caché válida, realizar la solicitud a la API
-        const response = await fetch("http://192.168.1.161:8000/api/extensiones");
+        // const response = await fetch("http://192.168.1.161:8000/api/extensiones");
         // extensiones test
-        // const response = await fetch("http://sie.test/api/extensiones");
+        const response = await fetch("http://sie.test/api/extensiones");
         const data = await response.json();
 
         // Almacenar los datos en la caché con un timestamp
@@ -85,29 +85,31 @@ const Extensiones = () => {
   const styles = {
     button: {
       position: "fixed",
-      top: "60%",
+      top: "65%",
       right: "10px",
       transform: "translateY(-50%)",
       zIndex: 1000,
-      backgroundColor: "#00ADB5", // Azul turquesa elegante
+      backgroundColor: "#00ADB5",
       color: "white",
       border: "none",
-      padding: "15px",
+      padding: "clamp(10px, 2vw, 15px)", // Adaptable en diferentes tamaños de pantalla
       borderRadius: "50%",
       boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.2)",
       cursor: "pointer",
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      fontSize: "16px",
+      fontSize: "clamp(14px, 1.5vw, 16px)", // Tamaño de fuente adaptable
       transition: "background-color 0.3s, transform 0.3s",
+      width: "clamp(40px, 4vw, 50px)", // Tamaño del botón adaptable
+      height: "clamp(40px, 4vw, 50px)",
     },
     buttonHover: {
       backgroundColor: "#007a86", // Azul más oscuro al pasar el mouse
       transform: "scale(1.1)",
     },
     icon: {
-      fontSize: "24px",
+      fontSize: "clamp(18px, 2vw, 24px)", // Tamaño del icono adaptable
     },
     sidebar: {
       position: "fixed",
