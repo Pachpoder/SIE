@@ -88,6 +88,11 @@ const HamburgerMenuPopup = ({ isOpen, toggleMenu }) => {
                             Tienda Online
                         </a>
                     </div>
+                    <div style={styles.linkContainer} className="hover-link-container">
+                        <a href="https://jarvismercav2.com/login" style={styles.link} className="hover-link" target="_blank" rel="noopener noreferrer">
+                            Jarvis
+                        </a>
+                    </div>
 
                     <div style={styles.linkContainer} className="hover-link-container">
                         <a href="https://www.wrike.com/workspace.htm?acc=2864213#inbox" style={styles.link} className="hover-link" target="_blank" rel="noopener noreferrer">

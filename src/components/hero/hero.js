@@ -8,7 +8,7 @@ import hero1 from '../../images/slider/Banner-1-imagen-derecha.webp';
 import hero2 from '../../images/slider/Banner-2-imagen-derecha.webp';
 import hero3 from '../../images/slider/Banner-3-imagen-derecha.webp';
 import hero4 from '../../images/slider/Banner-4-imagen-derecha.webp';
-import izquierda1 from '../../images/Banner-1-imagen-izquierda.webp';
+import izquierda1 from '../../images/cambio-banner-tren-bala.webp';
 import izquierda2 from '../../images/Banner-2-imagen-izquierda.webp';
 import izquierda3 from '../../images/Banner-3-imagen-izquierda.webp';
 import izquierda4 from '../../images/Banner-4-imagen-izquierda.webp';
