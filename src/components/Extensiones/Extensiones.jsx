@@ -41,6 +41,8 @@ const Extensiones = () => {
 
         // Si no hay caché válida, realizar la solicitud a la API
         const response = await fetch("http://192.168.1.161:8000/api/extensiones");
+        // extensiones test
+        // const response = await fetch("http://sie.test/api/extensiones");
         const data = await response.json();
 
         // Almacenar los datos en la caché con un timestamp
@@ -83,60 +85,63 @@ const Extensiones = () => {
   const styles = {
     button: {
       position: "fixed",
-      top: "50%", // Centrado verticalmente
-      right: "10px", // Botón pegado al lado derecho
-      transform: "translateY(-50%)", // Ajuste para centrar completamente
+      top: "60%",
+      right: "10px",
+      transform: "translateY(-50%)",
       zIndex: 1000,
-      backgroundColor: " rgba(21, 98, 39)", // Color azul adaptado al diseño
+      backgroundColor: "#00ADB5", // Azul turquesa elegante
       color: "white",
       border: "none",
       padding: "15px",
-      borderRadius: "50%", // Forma circular
+      borderRadius: "50%",
       boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.2)",
       cursor: "pointer",
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
       fontSize: "16px",
-      transition: "background-color 0.3s, transform 0.3s", // Animaciones suaves
+      transition: "background-color 0.3s, transform 0.3s",
     },
     buttonHover: {
-      backgroundColor: "#003f7f", // Color al pasar el mouse
-      transform: "scale(1.1)", // Escalar al pasar el mouse
+      backgroundColor: "#007a86", // Azul más oscuro al pasar el mouse
+      transform: "scale(1.1)",
     },
     icon: {
-      fontSize: "24px", // Tamaño del ícono
+      fontSize: "24px",
     },
     sidebar: {
       position: "fixed",
       top: 0,
-      left: showSidebar ? 0 : "-350px", // Mostrar desde el lado izquierdo
+      left: showSidebar ? 0 : "-350px",
       height: "100%",
       width: "350px",
-      backgroundColor: "#303030",
+      backgroundColor: "#222831", // Gris oscuro elegante
       zIndex: 999,
       overflowY: "auto",
       padding: "20px",
-      transition: "left 0.3s ease-in-out", // Animación suave al abrir/cerrar
+      transition: "left 0.3s ease-in-out",
       boxShadow: "0px 2px 10px rgba(0, 0, 0, 0.1)",
     },
     closeButton: {
       position: "absolute",
       top: "10px",
       right: "10px",
-      backgroundColor: "#ccc",
+      backgroundColor: "#555", // Gris neutro para botón de cierre
       border: "none",
       padding: "5px 10px",
       cursor: "pointer",
       borderRadius: "4px",
+      color: "#EEE",
     },
     input: {
       marginBottom: "20px",
       padding: "10px",
       width: "100%",
       borderRadius: "5px",
-      border: "1px solid #ddd",
+      border: "1px solid #555",
       fontSize: "14px",
+      backgroundColor: "#333", // Fondo oscuro para el input
+      color: "#EEE",
     },
     letterContainer: {
       display: "flex",
@@ -148,29 +153,29 @@ const Extensiones = () => {
     letter: {
       fontSize: "18px",
       fontWeight: "bold",
-      color: "blue",
+      color: "#00FFF5", // Azul brillante para resaltar
       marginRight: "10px",
     },
     divider: {
       flex: 1,
       height: "1px",
-      backgroundColor: "#ddd",
+      backgroundColor: "#444", // Gris medio para suavizar el contraste
     },
     card: {
       boxShadow: "0px 2px 8px rgba(0, 0, 0, 0.1)",
       borderRadius: "8px",
       padding: "15px",
       marginBottom: "15px",
-      backgroundColor: "#ffffff",
+      backgroundColor: "#393E46", // Gris oscuro pero diferenciado del fondo
       display: "flex",
       flexDirection: "column",
       transition: "all 0.3s ease",
       cursor: "pointer",
     },
     cardHover: {
-      boxShadow: "0px 8px 16px rgba(44, 117, 255, 0.4)", // Sombra azul
+      boxShadow: "0px 8px 16px rgba(0, 173, 181, 0.4)", // Sombra azul turquesa
       transform: "translateY(-8px)",
-      backgroundColor: "#d6ebff", // Azul claro suave que armoniza con el estilo
+      backgroundColor: "#00ADB5", // Azul oscuro en hover
       transition: "all 0.3s ease",
       cursor: "pointer",
     },
@@ -181,7 +186,7 @@ const Extensiones = () => {
       marginBottom: "10px",
     },
     cardTitle: {
-      color: "black",
+      color: "#EEE", // Blanco suave para títulos
       fontSize: "18px",
       fontWeight: "bold",
       cursor: "pointer",
@@ -189,21 +194,22 @@ const Extensiones = () => {
     extension: {
       fontSize: "14px",
       fontWeight: "bold",
-      color: "#2c75ff",
+      color: "#00FFF5", // Azul turquesa brillante para destacar
       cursor: "pointer",
     },
     cardText: {
       margin: "5px 0",
       fontSize: "14px",
-      color: "#3c3c3c",
+      color: "#EEEEEE", // Gris claro para texto secundario
       cursor: "pointer",
     },
     label: {
-      color: "black",
+      color: "#EEE",
       fontWeight: "bold",
       marginRight: "5px",
     },
   };
+  
 
   return (
     <div>

@@ -31,11 +31,11 @@ const Hero = () => {
     const settings = {
         dots: false,
         arrows: true,
-        speed: 1500,          // Velocidad de transición de 1.5 segundos
+        speed: 500,          // Velocidad de transición de 1.5 segundos
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,      // Autoplay desactivado
-        autoplaySpeed: 15000,  // 10 segundos entre cada cambio de slide
+        autoplaySpeed: 5000,  // 10 segundos entre cada cambio de slide
         fade: true,
         infinite: true,
         beforeChange: (current, next) => {
@@ -43,7 +43,7 @@ const Hero = () => {
                 sliderRef.current.slickPause();
                 setTimeout(() => {
                     sliderRef.current.slickPlay();
-                }, 10000); // Reinicio exacto para el primer cambio
+                }, 5000); // Reinicio exacto para el primer cambio
             }
         }
     };
