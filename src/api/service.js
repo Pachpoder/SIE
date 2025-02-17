@@ -20,8 +20,8 @@ const Services = [
         sImg: simg,
         sImgS: sImgS1,
         sTitle: 'Cápsula 5',
-        description: 'DANDO FRUTO EN LOS MEDIOS DE COMUNICACIÓN',
-        videoUrl: 'https://drive.google.com/file/d/1KOA_wzkZE9sjwdc498gNTe2lYTukj735/view?usp=sharing', 
+        description: 'CÓMO DAR FRUTO EN EL ÁREA DE EDUCACIÓN EN MI VIDA',
+        videoUrl: 'https://drive.google.com/file/d/1nHonNkMkpg5PGZBpXFXUeLEXlGW5CMvv/view?usp=sharing', 
         des2: 'Lacus, etiam sed est eu tempus need Temer diam congue laoret.',
         des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
         image: frutoarea,  // Aquí puedes agregar otra imagen si es necesario.
