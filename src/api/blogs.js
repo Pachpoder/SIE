@@ -15,7 +15,7 @@ const blogs = [
         title: 'Misión',
         screens: blogImg1,
         description: 'Consectetur adipiscing elit. Purusout phasellus malesuada lectus.',
-        author: 'Getión Eficiente, Valores Firmes y Calidad Superior',
+        author: 'Gestión Eficiente, Valores Firmes y Calidad Superior',
         authorTitle:'Sineor Consultant',
         // create_at: '25 Dec, 2020',
         blogSingleImg:blogSingleImg1, 
