@@ -85,7 +85,7 @@ const Extensiones = () => {
   const styles = {
     button: {
       position: "fixed",
-      top: "75vh", // Se mantiene en el 75% de la pantalla siempre
+      top: "85vh", // Se mantiene en el 75% de la pantalla siempre
       right: "10px",
       transform: "translateY(-50%)",
       zIndex: 1000,
