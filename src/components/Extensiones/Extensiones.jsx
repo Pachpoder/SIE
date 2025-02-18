@@ -85,7 +85,7 @@ const Extensiones = () => {
   const styles = {
     button: {
       position: "fixed",
-      top: "clamp(70%, 70vh, 70%)", // Se mantiene en el 65% de la pantalla de forma adaptable
+      top: "75vh", // Se mantiene en el 75% de la pantalla siempre
       right: "10px",
       transform: "translateY(-50%)",
       zIndex: 1000,
@@ -210,8 +210,8 @@ const Extensiones = () => {
       fontWeight: "bold",
       marginRight: "5px",
     },
-  };
-  
+};
+
 
   return (
     <div>
