@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import hero1 from '../../images/slider/Banner-1-imagen-derecha.webp';
-import hero2 from '../../images/slider/Banner-2-imagen-derecha.webp';
-import hero3 from '../../images/slider/Banner-3-imagen-derecha.webp';
-import hero4 from '../../images/slider/Banner-4-imagen-derecha.webp';
+import hero1 from '../../images/slider/Banner1Derecha.png';
+import hero2 from '../../images/slider/banner2derecha.png';
+import hero3 from '../../images/slider/banner3Derecha.png';
+import hero4 from '../../images/slider/Banner4Derecha.png';
 import izquierda1 from '../../images/cambio-banner-tren-bala.webp';
 import izquierda2 from '../../images/Banner-2-imagen-izquierda.webp';
 import izquierda3 from '../../images/Banner-3-imagen-izquierda.webp';

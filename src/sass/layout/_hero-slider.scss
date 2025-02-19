@@ -321,9 +321,6 @@
 		}
 
 		img{
-			width: 699px;
-			// height: 693px;
-			object-fit: cover;
 			@include media-query(1200px) {
 				max-width: 70%;
 				margin-left: auto;
