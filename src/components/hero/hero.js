@@ -56,19 +56,15 @@ const Hero = () => {
                         <div className="container">
                             <div className="row">
                                 <div className="col col-lg-6 col-md-8 col-sm-12 slide-caption">
+
                                     <div className="slide-title-sub">
-                                        {/* <h5>Bienvenidos a:</h5> */}
-                                        <img src={izquierda1}></img>
+                                        <img src={izquierda1} alt="Izquierda 1" />
                                     </div>
-                                    {/* <div className="slide-title">
-                                        <h2>MERCAFARMA</h2>
-                                    </div>
-                                    <div className="slide-subtitle">
-                                        <p>Somos una familia líder en el mercado farmacéutico, comprometidos con la calidad, innovación y excelencia. Cada colaborador desempeña un papel fundamental en nuestra misión de mejorar la salud y ofrecer productos y servicios de alta calidad.</p>
-                                    </div> */}
+
                                     <div className="slider-pic">
                                         <img src={hero1} alt="Slide 1" />
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -78,15 +74,8 @@ const Hero = () => {
                             <div className="row">
                                 <div className="col col-lg-6 col-md-8 col-sm-12 slide-caption">
                                     <div className="slide-title-sub">
-                                        {/* <h5>Mercafarma</h5> */}
                                         <img src={izquierda2}></img>
                                     </div>
-                                    {/* <div className="slide-title">
-                                        <h2>Excelencia que Transforma</h2>
-                                    </div>
-                                    <div className="slide-subtitle">
-                                        <p>Nuestra pasión por lo que hacemos nos une como equipo, impulsa la excelencia que transforma y nos motiva a alcanzar metas estratégicas que generan impacto y valor cada día.</p>
-                                    </div> */}
                                     <div className="slider-pic">
                                         <img src={hero2} alt="Slide 2" />
                                     </div>
@@ -99,15 +88,8 @@ const Hero = () => {
                             <div className="row">
                                 <div className="col col-lg-6 col-md-8 col-sm-12 slide-caption">
                                     <div className="slide-title-sub">
-                                        {/* <h5>Orgullosos de ser Mercafarma:</h5> */}
                                         <img src={izquierda3}></img>
                                     </div>
-                                    {/* <div className="slide-title">
-                                        <h2>Innovación, liderazgo y compromiso</h2>
-                                    </div>
-                                    <div className="slide-subtitle">
-                                        <p>Formamos parte de una empresa que reconoce y valora tu talento. En <b>MERCAFARMA</b>, la innovación, el liderazgo y el compromiso son pilares fundamentales que nos inspiran a superar desafíos, generar impacto positivo y alcanzar nuevas metas cada día.</p>
-                                    </div> */}
                                     <div className="slider-pic">
                                         <img src={hero3} alt="Slide 3" />
                                     </div>
@@ -120,15 +102,8 @@ const Hero = () => {
                             <div className="row">
                                 <div className="col col-lg-6 col-md-8 col-sm-12 slide-caption">
                                     <div className="slide-title-sub">
-                                        {/* <h5>Mercafarma</h5> */}
                                         <img src={izquierda4}></img>
                                     </div>
-                                    {/* <div className="slide-title">
-                                        <h2>El Motor Que Nos Impulsa</h2>
-                                    </div>
-                                    <div className="slide-subtitle">
-                                        <p>Súbete al tren de <b>MERCAFARMA</b> y seamos juntos la fuerza que transforma, innova y lidera el camino hacia un mañana más eficiente y extraordinario.</p>
-                                    </div> */}
                                     <div className="slider-pic">
                                         <img src={hero4} alt="Slide 4" />
                                     </div>

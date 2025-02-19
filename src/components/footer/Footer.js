@@ -49,10 +49,10 @@ const Footer = (props) => {
                                     <h3>Soporte</h3>
                                 </div>
                                 <ul>
-                                    <li><Link onClick={() => window.open('https://www.wrike.com/workspace.htm?acc=2864213#/forms?formid=1367318', '_blank')} to="#">Centro de Asistencia IT</Link></li>
-                                    <li><Link onClick={() => window.open('https://www.wrike.com/frontend/requestforms/index.html?token=eyJhY2NvdW50SWQiOjI4NjQyMTMsInRhc2tGb3JtSWQiOjczNTE4MX0JNDgxNzMxNDkzOTQ4OQljMDFjNjJmMTFlMGJlMTkzNjM0MmQ1ODZkNjZlZWNmMDI5OTAyZjI1Mzk5ODlhM2EzMjQ2ZjQ5ZTM0NGJlZmRi', '_blank')} to="#">Pedidos Personales</Link></li>
-                                    <li><Link onClick={() => window.open('https://www.wrike.com/frontend/requestforms/index.html?token=eyJhY2NvdW50SWQiOjI4NjQyMTMsInRhc2tGb3JtSWQiOjY4MTUxMX0JNDgwNjU4MDEzNDUzOAlkMTk2MTUxZGZhYjk1OTJiMTc5ODI3OTc2NTE2NTQ1MGU5ZGE0ZjVjYmFjZjBjOTBhNTQ1YzAxZTE3YWEwMWEx', '_blank')} to="#">Buzón de Quejas y Sugerencias</Link></li>
-                                    <li><Link onClick={() => window.open('https://tinyurl.com/29hub4qt', '_blank')} to="#">Solicitud RRHH</Link></li>
+                                    <li><Link onClick={() => window.open('https://tify.cc/7ydod', '_blank')} to="#">Centro de Asistencia IT</Link></li>
+                                    <li><Link onClick={() => window.open('https://tify.cc/Gydiy', '_blank')} to="#">Pedidos Personales</Link></li>
+                                    <li><Link onClick={() => window.open('https://tify.cc/Aydum', '_blank')} to="#">Buzón de Quejas y Sugerencias</Link></li>
+                                    <li><Link onClick={() => window.open('https://tify.cc/pydy1', '_blank')} to="#">Solicitud RRHH</Link></li>
                                     <li><Link onClick={() => window.open('https://portal.gyt.com.gt/guest/consultas/medired/busqueda.php?medicosPageSize=50&medicosOrder=Sorter_NOMBRE&medicosDir=ASC%2F1000&medicosPage=1', '_blank')} to="#">Médicos Afiliados</Link></li>
                                 </ul>
                             </div>
