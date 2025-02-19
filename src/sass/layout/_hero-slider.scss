@@ -228,9 +228,9 @@
 	}
 
 	.slide-caption {
-		padding-top: 20px;
+		// padding-right: 300px;
 		@include widther(1200px) {
-			margin-top: 65px;
+			// margin-top: 65px;
 		}
 
 		@media(max-width:1200px){
