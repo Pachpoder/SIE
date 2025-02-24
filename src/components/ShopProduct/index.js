@@ -29,7 +29,7 @@ const ShopProduct = ({ products, addToCartProduct }) => {
                                           title="Add to Cart"
                                           onClick={() => addToCartProduct(product)}
                                         >
-                                          Add to cart
+                                          Leer articulo...
                                         </button>
                                   </div>
                               </div>

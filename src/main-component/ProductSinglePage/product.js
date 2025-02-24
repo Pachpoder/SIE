@@ -27,34 +27,26 @@ const Product = ({ item, addToCart }) => {
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
-                    <i className="fa fa-star-o"></i>
+                    <i className="fa fa-star"></i>
                   </div>
-                  <span>(25 customer reviews)</span>
+                  {/* <span>(25 customer reviews)</span> */}
                 </div>
                 <div className="price">
-                  <span className="current">${item.price}</span>
-                  <span className="old">${item.delPrice}</span>
+                  <span className="current">Esto es un blog</span>
+                  <span className="old">Aqui hablaremos de un blog</span>
                 </div>
-                <p>There are many or randomised words which don't look even slightly believable.</p>
+                {/* <p>There are many or randomised words which don't look even slightly believable.</p> */}
                 <ul>
-                  <li>Going through the cites of the word in classNameical.</li>
-                  <li>There are many variations of passages.</li>
+                  <li>Obejtivo del articulo </li>
+                  <li>Objetivo del articulo </li>
                 </ul>
                 <div className="product-option">
                   <div className="product-row">
-                  <button className="theme-btn"
-                                          onClick={() => addToCart(item)}>Add
-                                      to cart</button>
                     <div>
                     </div>
                   </div>
                 </div>
-                <div className="tg-btm">
-                  <p><span>Categories:</span> Book</p>
-                  <p><span>Tags:</span> law, events, consult</p>
-                </div>
               </div>
-
           </div>
       </div> 
   );

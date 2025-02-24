@@ -60,7 +60,7 @@ const AllRoute = () => {
           <Route path="project-single/:id" element={<ProjectSinglePage />} />
           <Route path="team" element={<TeamPage />} />
           <Route path="team-single/:id" element={<TeamSinglePage />} />
-          <Route path="shop" element={<ShopPage />} />
+          <Route path="Blog-Merdafarma" element={<ShopPage />} />
           <Route path='product-single/:id' element={<ProductSinglePage />} />
           <Route path='cart' element={<CartPage />} />
           <Route path='checkout' element={<CheckoutPage />} />

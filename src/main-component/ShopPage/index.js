@@ -5,9 +5,9 @@ import Scrollbar from '../../components/scrollbar/scrollbar'
 import { addToCart } from "../../store/actions/action";
 import ShopProduct from '../../components/ShopProduct';
 import api from "../../api";
-import Navbar4 from '../../components/Navbar4/Navbar4';
-import Logo from '../../images/logo.png'
 import Footer2 from '../../components/footer2/Footer2';
+import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/footer/Footer';
 
 const ShopPage =({ addToCart }) => {
 
@@ -21,8 +21,8 @@ const ShopPage =({ addToCart }) => {
 
     return(
         <Fragment>
-            <Navbar4 topbarNone={'wpo-header-style-1'} hclass={'shop-header'} Logo={Logo}/>
-            <PageTitle pageTitle={'Shop'} pagesub={'Shop'}/> 
+            <Navbar hclass={'wpo-header-style-1'} topbarNone={'topbar-none'} />
+            <PageTitle pageTitle={'BLOG MERCAFARMA'} pagesub={'Shop'}/> 
               <section className="wpo-shop-page section-padding">
                   <div className="container">
                       <div className="row">
@@ -35,7 +35,7 @@ const ShopPage =({ addToCart }) => {
                       </div>
                   </div>
               </section>
-            <Footer2/>
+            <Footer/>
             <Scrollbar/>
         </Fragment>
     )

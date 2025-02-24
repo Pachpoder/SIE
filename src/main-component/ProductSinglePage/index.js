@@ -1,15 +1,14 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom'
 import { connect } from "react-redux";
-import Navbar4 from '../../components/Navbar4/Navbar4';
 import PageTitle from '../../components/pagetitle/PageTitle'
 import Scrollbar from '../../components/scrollbar/scrollbar'
 import { addToCart } from "../../store/actions/action";
 import Product from './product'
 import api from "../../api";
 import ProductTabs from './alltab';
-import Logo from '../../images/logo.png'
-import Footer2 from '../../components/footer2/Footer2';
+import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/footer/Footer';
 
 
 
@@ -32,8 +31,8 @@ const ProductSinglePage =(props) => {
 
     return(
         <Fragment>
-            <Navbar4 topbarNone={'wpo-header-style-1'} hclass={'shop-header'} Logo={Logo}/>
-            <PageTitle pageTitle={'Product Single'} pagesub={'Product Single'}/> 
+         <Navbar hclass={'wpo-header-style-1'} topbarNone={'topbar-none'} />
+            <PageTitle pageTitle={'Sobre el articulo'} pagesub={'Sobre el Articulo'}/> 
             <section className="wpo-shop-single-section section-padding">
                 <div className="container">
                     {item ? <Product
@@ -43,7 +42,7 @@ const ProductSinglePage =(props) => {
                     <ProductTabs/>
                 </div>
             </section>
-            <Footer2/>
+            <Footer/>
             <Scrollbar/>
         </Fragment>
     )
