@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';  // Importa react-scroll para navegación suave
+import { Link } from 'react-scroll';
 import HeaderTopbar from '../HeaderTopbar/HeaderTopbar';
 import HamburgerMenuPopup from '../../components/header/MenuPopup/HamburgerMenuPopup';
 import Logo from '../../images/logo-mercafarma.png';
@@ -18,137 +18,182 @@ const Header = (props) => {
             <HeaderTopbar />
             <div className={`wpo-site-header ${props.hclass}`}>
                 <nav className="navigation navbar navbar-expand-lg navbar-light">
-                    <div className="container-fluid">
-                        <div className="row align-items-center justify-content-between">
-                            {/* Logo */}
-                            <div className="col-lg-3 col-md-6 col-8 d-flex align-items-center">
-                                <div className="navbar-header">
-                                    <Link to="banner-section" smooth={true} duration={500} className="navbar-brand">
-                                        <img src={Logo} alt="Logo Mercafarma" className="logo-img" />
-                                    </Link>
-                                </div>
-                                <Extensiones />
-                            </div>
+                    <div className="container-fluid navbar-container">
 
-                            {/* Menú de navegación */}
-                            <div className="col-lg-6 d-none d-lg-block">
-                                <div id="navbar" className="navigation-holder" style={centerMenuStyle}>
-                                    <ul className="nav navbar-nav mb-2 mb-lg-0">
-                                        <li><Link to="banner-section" smooth={true} duration={500}>Inicio</Link></li>
-                                        <li><Link to="about-section" smooth={true} duration={500}>Mercafarma</Link></li>
-                                        {/* <li><Link to="values-section" smooth={true} duration={500}>Principios</Link></li> */}
-                                        <li><Link to="capsules-section" smooth={true} duration={500}>Crecimiento Personal</Link></li>
-                                        <li><Link to="brands-section" smooth={true} duration={500}>Otros Sitios Web</Link></li>
-                                        <li><Link to="contact-section" smooth={true} duration={500}>Contacto</Link></li>
-                                        <li><a target='_blank' href='http://192.168.1.161/home' >Centro de Gestiones</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            {/* Botón y menú hamburguesa */}
-                            <div className="col-lg-3 col-md-6 col-4 text-end">
-                                <button
-                                    className={`${styles['hamburger-menu-btn']} ${hamburgerActive ? styles.active : ''}`}
-                                    onClick={toggleHamburgerMenu}
-                                    style={{
-                                        border: 'none',
-                                        background: 'none',
-                                        padding: '8px',
-                                        fontSize: '24px',
-                                        lineHeight: '0',
-                                    }}
-                                >
-                                    <span className={styles['hamburger-icon']}></span>
-                                </button>
-
-                                {/* Componente de menú emergente */}
-                                <HamburgerMenuPopup isOpen={hamburgerActive} toggleMenu={toggleHamburgerMenu} />
-                            </div>
+                        {/* Logo */}
+                        <div className="navbar-logo">
+                            <Link to="banner-section" smooth={true} duration={500} className="navbar-brand">
+                                <img src={Logo} alt="Logo Mercafarma" className="logo-img" />
+                            </Link>
+                            <Extensiones />
                         </div>
+
+                        {/* Menú de navegación */}
+                        <div className="navbar-menu d-none d-lg-flex">
+                            <ul className="nav navbar-nav">
+                                <li><Link to="banner-section" smooth={true} duration={500}>Inicio</Link></li>
+                                <li><Link to="about-section" smooth={true} duration={500}>Mercafarma</Link></li>
+                                <li><Link to="capsules-section" smooth={true} duration={500}>Crecimiento Personal</Link></li>
+                                <li><Link to="brands-section" smooth={true} duration={500}>Otros Sitios Web</Link></li>
+                                <li><Link to="contact-section" smooth={true} duration={500}>Contacto</Link></li>
+                                <li><a target='_blank' href='http://192.168.1.161/home'>Centro de Gestiones</a></li>
+                            </ul>
+                        </div>
+
+                        {/* Menú hamburguesa correctamente alineado y visible */}
+                        {/* Botón y menú hamburguesa */}
+                        <div className="col-lg-3 col-md-6 col-4 text-end">
+                            <button
+                                className={`${styles['hamburger-menu-btn']} ${hamburgerActive ? styles.active : ''}`}
+                                onClick={toggleHamburgerMenu}
+                                style={{
+                                    border: 'none',
+                                    background: 'none',
+                                    padding: '8px',
+                                    fontSize: '24px',
+                                    lineHeight: '0',
+                                }}
+                            >
+                                <span className={styles['hamburger-icon']}></span>
+                            </button>
+
+                            {/* Componente de menú emergente */}
+                            <HamburgerMenuPopup isOpen={hamburgerActive} toggleMenu={toggleHamburgerMenu} />
+                        </div>
+
                     </div>
                 </nav>
             </div>
 
-            {/* Estilos adicionales para el responsive */}
+            {/* Estilos corregidos */}
             <style>
                 {`
-                    @media (max-width: 1024px) {
-                        #navbar {
-                            display: none;
-                        }
+                    .wpo-site-header {
+                        background-color: #A61C1C; /* Fondo rojo del navbar */
+                        padding: 10px 0;
+                    }
 
-                        .hamburger-menu-btn {
-                            display: inline-block;
-                            position: relative;
-                            z-index: 10;
+                    .navbar-container {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        flex-wrap: nowrap;
+                        padding: 0 20px;
+                    }
+
+                    .navbar-logo {
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                    }
+
+                    .logo-img {
+                        max-height: 50px;
+                        width: auto;
+                    }
+
+                    .navbar-menu {
+                        flex-grow: 1;
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .nav.navbar-nav {
+                        display: flex;
+                        gap: 20px;
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    .nav.navbar-nav li {
+                        display: inline-block;
+                    }
+
+                    .nav.navbar-nav li a {
+                        text-decoration: none;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: white;
+                        padding: 8px 12px;
+                        transition: color 0.3s ease;
+                    }
+
+                    .nav.navbar-nav li a:hover {
+                        color: #ffcc00;
+                    }
+
+                    /* Ajustes para que el menú hamburguesa siempre aparezca en la derecha */
+                    .navbar-hamburger {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        right: 20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+
+                    .hamburger-menu-btn {
+                        border: none;
+                        background: none;
+                        padding: 8px;
+                        font-size: 24px;
+                        cursor: pointer;
+                    }
+
+                    .hamburger-icon {
+                        width: 30px;
+                        height: 3px;
+                        background-color: white;
+                        display: block;
+                        margin: 5px 0;
+                        border-radius: 2px;
+                    }
+
+                    /* Ajustes responsivos */
+                    @media (max-width: 1024px) {
+                        .navbar-container {
+                            padding: 8px 15px;
                         }
 
                         .logo-img {
                             max-height: 40px;
-                            width: auto;
-                            margin: 0 auto;
                         }
 
-                        .wpo-site-header {
-                            padding: 12px 16px;
+                        .nav.navbar-nav {
+                            gap: 15px;
                         }
 
-                        .container-fluid {
-                            padding: 0;
-                            flex-wrap: nowrap;
-                        }
-
-                        .navbar-header,
-                        .text-end {
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                        }
-
-                        .hamburger-icon {
-                            width: 28px;
-                            height: 3px;
-                            background-color: #fff;
-                            margin: 5px auto;
-                            border-radius: 2px;
+                        .nav.navbar-nav li a {
+                            font-size: 14px;
+                            padding: 6px 10px;
                         }
                     }
 
-                    @media (min-width: 1025px) {
-                        .hamburger-menu-btn {
+                    /* Mostrar menú hamburguesa en pantallas pequeñas y mantener alineado */
+                    @media (max-width: 992px) {
+                        .navbar-menu {
                             display: none;
                         }
 
-                        .logo-img {
-                            max-height: 50px;
-                        }
-                    }
-
-                    @media (max-width: 480px) {
-                        .logo-img {
-                            max-height: 35px;
+                        .navbar-hamburger {
+                            display: flex;
+                            position: absolute;
+                            right: 15px;
+                            top: 50%;
+                            transform: translateY(-50%);
                         }
 
-                        .wpo-site-header {
-                            padding: 8px 12px;
-                        }
-
-                        .text-end {
-                            justify-content: flex-end;
+                        .hamburger-menu-btn {
+                            display: block;
                         }
                     }
                 `}
             </style>
         </header>
     );
-};
-
-const centerMenuStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    textAlign: 'center',
-    height: '100%',
 };
 
 export default Header;
