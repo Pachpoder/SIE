@@ -1,6 +1,7 @@
 {
   "name": "consoel-react",
   "version": "0.1.0",
+  "homepage": "http://sie.test/build",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.7.2",

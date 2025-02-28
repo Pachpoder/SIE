@@ -40,7 +40,7 @@ const Header = (props) => {
                                         <li><Link to="capsules-section" smooth={true} duration={500}>Crecimiento Personal</Link></li>
                                         <li><Link to="brands-section" smooth={true} duration={500}>Otros Sitios Web</Link></li>
                                         <li><Link to="contact-section" smooth={true} duration={500}>Contacto</Link></li>
-                                        <li><a target='_blank' href='http://192.168.1.161:8000/home' >Reportería</a></li>
+                                        <li><a target='_blank' href='http://192.168.1.161:8000/home' >Gestión Operativa</a></li>
                                     </ul>
                                 </div>
                             </div>
