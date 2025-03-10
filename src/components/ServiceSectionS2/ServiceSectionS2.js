@@ -83,6 +83,7 @@ const ServiceSectionS2 = () => {
                                         </div>
                                         <h2>{service.sTitle}</h2>
                                         <p>{service.description}</p>
+                                        <p><small>{service.des2}</small></p>
                                         <a 
                                             href={service.videoUrl} 
                                             target="_blank" 
