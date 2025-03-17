@@ -48,7 +48,7 @@ const Services = [
         sTitle: 'Cápsula 4',
         description: 'A TODA VELOCIDAD HACIA EL EXITO GRACIAS POR SER NUESTRA FUERZA',
         videoUrl: 'https://drive.google.com/file/d/1s4ddiZlpYEGVaezbqGOn1CLAJxzfLw6C/view?usp=drive_link',
-        des2: 'Fecha: 10 de Marzo',
+        des2: 'Fecha: 17 de Marzo',
         des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
         image: frutoarea,
         ssImg1: sSingleimg1,
