@@ -67,13 +67,13 @@ const ServiceSectionS2 = () => {
     return (
         <section className="wpo-service-section-s2 section-padding">
             <div className="container">
-                <SectionTitle  Title={'Contenido de Crecimiento Personal!'} subTitle={'Aquí encuentras las cápsulas de este mes, para que las veas cuando las necesites.'} />
+                <SectionTitle Title={'Contenido de Crecimiento Personal!'} subTitle={'Aquí encuentras las cápsulas de este mes, para que las veas cuando las necesites.'} />
                 <div className="row-grid wpo-service-slider-s2">
                     <Slider {...settings}>
                         {Services.map((service, srv) => (
                             <div className="grid" key={srv}>
-                                <div className="wpo-service-item">
-                                    <div className="wpo-service-text">
+                                <div className="wpo-service-item" style={cardStyle}>
+                                    <div className="wpo-service-text" style={cardContentStyle}>
                                         <div className="service-icon" style={iconContainerStyle}>
                                             {service.image ? (
                                                 <img src={service.image} alt={service.sTitle} style={imageStyle} />
@@ -84,9 +84,9 @@ const ServiceSectionS2 = () => {
                                         <h2>{service.sTitle}</h2>
                                         <p>{service.description}</p>
                                         <p><small>{service.des2}</small></p>
-                                        <a 
-                                            href={service.videoUrl} 
-                                            target="_blank" 
+                                        <a
+                                            href={service.videoUrl}
+                                            target="_blank"
                                             rel="noopener noreferrer"
                                             onClick={() => window.scrollTo(10, 0)}
                                         >
@@ -95,6 +95,7 @@ const ServiceSectionS2 = () => {
                                     </div>
                                 </div>
                             </div>
+
                         ))}
                     </Slider>
                 </div>
@@ -120,6 +121,24 @@ const imageStyle = {
     maxHeight: '80%',
     objectFit: 'contain',
     borderRadius: '50%'
+};
+const cardStyle = {
+    minHeight: '450px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    padding: '20px',
+    backgroundColor: '#2c2c2c', // asegúrate de que combine con tu diseño
+    color: 'white',
+    borderRadius: '10px',
+};
+
+const cardContentStyle = {
+    flexGrow: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    textAlign: 'center',
 };
 
 export default ServiceSectionS2;

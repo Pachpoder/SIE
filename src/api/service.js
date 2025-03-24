@@ -15,21 +15,9 @@ import frutoarea from '../images/service/fruto/iconoCapuslas.webp';
 import frutocomunicacon from '../images/service/fruto/fruto-medios-comunicacion.webp';
 
 const Services = [   
+  
     {
         Id: '1',
-        sImg: simg,
-        sImgS: sImgS1,
-        sTitle: 'Cápsula 2',
-        description: 'A TODA VELOCIDAD HACIA EL EXITO GRACIAS POR SER NUESTRA FUERZA',
-        videoUrl: 'https://drive.google.com/file/d/1rT8pMhvJbTVUYXUOwoSNjzaZRCnoyz6K/view?usp=drive_link',
-        des2: 'Fecha: 3 de Marzo',
-        des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
-        image: frutoarea,
-        ssImg1: sSingleimg1,
-        ssImg2: sSingleimg2,
-    },
-    {
-        Id: '2',
         sImg: simg,
         sImgS: sImgS1,
         sTitle: 'Cápsula 3',
@@ -42,7 +30,7 @@ const Services = [
         ssImg2: sSingleimg2,
     },
     {
-        Id: '3',
+        Id: '2',
         sImg: simg,
         sImgS: sImgS1,
         sTitle: 'Cápsula 4',
@@ -54,6 +42,20 @@ const Services = [
         ssImg1: sSingleimg1,
         ssImg2: sSingleimg2,
     },
+    {
+        Id: '3',
+        sImg: simg,
+        sImgS: sImgS1,
+        sTitle: 'Cápsula 5',
+        description: 'MÁS QUE UN TRAYECTO, UN DESTINO: GRACIAS POR ACOMPAÑARNOS EN ESTE VIAJE', 
+        videoUrl: 'https://drive.google.com/file/d/141jW46ifuD2cvwYbhoMYDidM8OgLHmOB/view?usp=sharing',
+        des2: 'Fecha: 24 de Marzo',
+        des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
+        image: frutoarea,
+        ssImg1: sSingleimg1,
+        ssImg2: sSingleimg2,
+    },
+  
     {
         Id: '4',
         sImg: simg2,
@@ -128,6 +130,19 @@ const Services = [
         description: 'A TODA VELOCIDAD HACIA EL EXITO GRACIAS POR SER NUESTRA FUERZA',
         videoUrl: 'https://drive.google.com/file/d/1x2k2qj9MoVT2EnkEch2xOBdE9pt6oT61/view?usp=sharing',
         des2: 'Fecha: 24 de Febrero',
+        des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
+        image: frutoarea,
+        ssImg1: sSingleimg1,
+        ssImg2: sSingleimg2,
+    },
+    {
+        Id: '10',
+        sImg: simg,
+        sImgS: sImgS1,
+        sTitle: 'Cápsula 2',
+        description: 'A TODA VELOCIDAD HACIA EL EXITO GRACIAS POR SER NUESTRA FUERZA',
+        videoUrl: 'https://drive.google.com/file/d/1rT8pMhvJbTVUYXUOwoSNjzaZRCnoyz6K/view?usp=drive_link',
+        des2: 'Fecha: 3 de Marzo',
         des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
         image: frutoarea,
         ssImg1: sSingleimg1,
