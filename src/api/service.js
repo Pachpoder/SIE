@@ -36,7 +36,7 @@ const Services = [
         sTitle: 'Cápsula 2',
         description: 'PENSAMIENTO VISIONARIO: Enfocándonos en el futuro',
         videoUrl: 'https://drive.google.com/file/d/1ejKWh9Tb0BI73VfVty6naqkWxb6ueVpl/view?usp=drive_link',
-        des2: 'Fecha: 7 de Abril',
+        des2: 'Fecha: 21 de Abril',
         des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
         image: frutoarea,
         ssImg1: sSingleimg1,
