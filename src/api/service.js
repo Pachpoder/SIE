@@ -47,6 +47,19 @@ const Services = [
         sImg: simg,
         sImgS: sImgS1,
         sTitle: 'Cápsula 3',
+        description: 'PENSAMIENTO VISIONARIO: La innovación a través de la creatividad',
+        videoUrl: 'https://drive.google.com/file/d/1u9l-uqN8u_50rGqauDDo09faDatLyHo2/view?usp=sharing',
+        des2: 'Fecha: 28 de Abril',
+        des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
+        image: frutoarea,
+        ssImg1: sSingleimg1,
+        ssImg2: sSingleimg2,
+    },
+    {
+        Id: '4',
+        sImg: simg,
+        sImgS: sImgS1,
+        sTitle: 'Cápsula 3',
         description: 'A TODA VELOCIDAD HACIA EL EXITO GRACIAS POR SER NUESTRA FUERZA',
         videoUrl: 'https://drive.google.com/file/d/1V-Cp7yEQYqyTOMrll9Kiyp6ISK4Obu5T/view?usp=drive_link',
         des2: 'Fecha: 10 de Marzo',
@@ -56,7 +69,7 @@ const Services = [
         ssImg2: sSingleimg2,
     },
     {
-        Id: '4',
+        Id: '5',
         sImg: simg,
         sImgS: sImgS1,
         sTitle: 'Cápsula 4',
@@ -69,7 +82,7 @@ const Services = [
         ssImg2: sSingleimg2,
     },
     {
-        Id: '5',
+        Id: '6',
         sImg: simg,
         sImgS: sImgS1,
         sTitle: 'Cápsula 5',
@@ -83,7 +96,7 @@ const Services = [
     },
   
     {
-        Id: '6',
+        Id: '7',
         sImg: simg2,
         sImgS: sImgS2,
         sTitle: 'Cápsula 1',
@@ -97,7 +110,7 @@ const Services = [
     },
   
     {
-        Id: '7',
+        Id: '8',
         sImg: simg2,
         sImgS: sImgS2,
         sTitle: 'Cápsula 2',
@@ -110,7 +123,7 @@ const Services = [
         ssImg2: sSingleimg2,
     },
     {
-        Id: '8',
+        Id: '9',
         sImg: simg2,
         sImgS: sImgS2,
         sTitle: 'Cápsula 3',
@@ -123,7 +136,7 @@ const Services = [
         ssImg2: sSingleimg2,
     },
     {
-        Id: '9',
+        Id: '10',
         sImg: simg2,
         sImgS: sImgS2,
         sTitle: 'Cápsula 4',
@@ -136,7 +149,7 @@ const Services = [
         ssImg2: sSingleimg2,
     },
     {
-        Id: '10',
+        Id: '11',
         sImg: simg,
         sImgS: sImgS1,
         sTitle: 'Cápsula 5',
@@ -149,7 +162,7 @@ const Services = [
         ssImg2: sSingleimg2,
     },
     {
-        Id: '11',
+        Id: '12',
         sImg: simg,
         sImgS: sImgS1,
         sTitle: 'Cápsula 1',
@@ -162,7 +175,7 @@ const Services = [
         ssImg2: sSingleimg2,
     },
     {
-        Id: '12',
+        Id: '13',
         sImg: simg,
         sImgS: sImgS1,
         sTitle: 'Cápsula 2',
