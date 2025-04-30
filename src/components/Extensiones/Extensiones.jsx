@@ -7,6 +7,8 @@ import transitions from "@material-ui/core/styles/transitions";
 
 const CACHE_KEY = "extensions_cache";
 const CACHE_TTL = 60 * 60 * 1000; // 1 hora en milisegundos
+const SIE_API_KEY = process.env.REACT_APP_SIE_API_KEY || "";
+
 
 const Extensiones = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -40,7 +42,14 @@ const Extensiones = () => {
         }
 
         // Si no hay caché válida, realizar la solicitud a la API
-        const response = await fetch("http://192.168.1.161/api/extensiones");
+        const response = await fetch("/api/extensiones", {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer " + SIE_API_KEY,
+          }
+        });        
+        
         // extensiones test
         // const response = await fetch("http://sie.test/api/extensiones");
         const data = await response.json();
