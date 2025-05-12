@@ -35,7 +35,7 @@ const Services = [
         sImgS: sImgS1,
         sTitle: 'Cápsula 4',
         description: 'PENSAMIENTO VISIONARIO: Identificando signos de riesgo en nuestra organización',
-        videoUrl: 'https://drive.google.com/file/d/1TRFlpXwcHL1Q99ChP21z7EwPc-iURGAB/view?usp=sharing',
+        videoUrl: 'https://drive.google.com/file/d/1wlo75X1XYJxdIU7VXhpXNFYpeDGmWGB3/view?usp=sharing',
         des2: 'Fecha: 5 de Mayo',
         des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
         image: frutoarea,
