@@ -14,9 +14,115 @@ import sSingleimg2 from '../images/service-single/3.jpg'
 import frutoarea from '../images/service/fruto/iconoCapuslas.webp';
 import frutocomunicacon from '../images/service/fruto/fruto-medios-comunicacion.webp';
 
-const Services = [   
+const Services = [
 
-     {
+
+    {
+        Id: '1',
+        sImg: simg,
+        sImgS: sImgS1,
+        sTitle: 'Cápsula 7',
+        description: 'CÓMO DAR RETROALIMENTACIÓN DE MANERA EFECTIVA: Retroalimentación con permiso',
+        videoUrl: 'https://drive.google.com/file/d/1bgAAhH77v2IP7czAMsDikdrz1Q5-HzTX/view?usp=sharing',
+        des2: 'Fecha: 13 de Octubre',
+        des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
+        image: frutoarea,
+        ssImg1: sSingleimg1,
+        ssImg2: sSingleimg2,
+    },
+    {
+        Id: '1',
+        sImg: simg,
+        sImgS: sImgS1,
+        sTitle: 'Cápsula 6',
+        description: 'CÓMO DAR RETROALIMENTACIÓN DE MANERA EFECTIVA: Lo que comunicas sin palabras',
+        videoUrl: 'https://drive.google.com/file/d/1ZSonUryfW-LBVeGyNqizg5rcGPL1HsPQ/view?usp=sharing',
+        des2: 'Fecha: 2 de Octubre',
+        des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
+        image: frutoarea,
+        ssImg1: sSingleimg1,
+        ssImg2: sSingleimg2,
+    },
+    {
+        Id: '1',
+        sImg: simg,
+        sImgS: sImgS1,
+        sTitle: 'Cápsula 5',
+        description: 'CÓMO DAR RETROALIMENTACIÓN DE MANERA EFECTIVA: El poder de una palabra',
+        videoUrl: 'https://drive.google.com/file/d/1ioqgwGkspnjRtS4peHoukjvz3-dykM-k/view?usp=sharing',
+        des2: 'Fecha: 29 de Septiembre',
+        des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
+        image: frutoarea,
+        ssImg1: sSingleimg1,
+        ssImg2: sSingleimg2,
+    },
+    {
+        Id: '1',
+        sImg: simg,
+        sImgS: sImgS1,
+        sTitle: 'Cápsula 4',
+        description: 'CÓMO DAR RETROALIMENTACIÓN DE MANERA EFECTIVA: Claridad y equilibrio',
+        videoUrl: 'https://drive.google.com/file/d/1_pPPIba-6sEXdxAgLacmwJkk5hLE6OS0/view?usp=sharing',
+        des2: 'Fecha: 22 de Septiembre',
+        des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
+        image: frutoarea,
+        ssImg1: sSingleimg1,
+        ssImg2: sSingleimg2,
+    },
+    {
+        Id: '1',
+        sImg: simg,
+        sImgS: sImgS1,
+        sTitle: 'Cápsula 3',
+        description: 'CÓMO DAR RETROALIMENTACIÓN DE MANERA EFECTIVA: Menos es más',
+        videoUrl: 'https://drive.google.com/file/d/1Z5gGKZC4vevjyNdrtUzN1xNkPH2InVUD/view?usp=sharing',
+        des2: 'Fecha: 8 de Septiembre',
+        des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
+        image: frutoarea,
+        ssImg1: sSingleimg1,
+        ssImg2: sSingleimg2,
+    },
+    {
+        Id: '1',
+        sImg: simg,
+        sImgS: sImgS1,
+        sTitle: 'Cápsula 2',
+        description: 'CÓMO DAR RETROALIMENTACIÓN DE MANERA EFECTIVA: Construir en vez de destruir',
+        videoUrl: 'https://drive.google.com/file/d/1Cd49M887l3YMfWKe5rLEBdAPXHnD5lKw/view?usp=sharing',
+        des2: 'Fecha: 1 de Septiembre',
+        des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
+        image: frutoarea,
+        ssImg1: sSingleimg1,
+        ssImg2: sSingleimg2,
+    },
+    {
+        Id: '1',
+        sImg: simg,
+        sImgS: sImgS1,
+        sTitle: 'Cápsula 1',
+        description: 'CÓMO DAR RETROALIMENTACIÓN DE MANERA EFECTIVA: Privacidad y oportunidad',
+        videoUrl: 'https://drive.google.com/file/d/1dBY6QrOhO7e862W2FMGZtCcrw1jdMZ0g/view?usp=sharing',
+        des2: 'Fecha: 25 de Agosto',
+        des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
+        image: frutoarea,
+        ssImg1: sSingleimg1,
+        ssImg2: sSingleimg2,
+    },
+    {
+        Id: '1',
+        sImg: simg,
+        sImgS: sImgS1,
+        sTitle: 'Cápsula 6',
+        description: 'AFINANDO LA ESTRATEGIA: Alinea, asigna y avanza',
+        videoUrl: 'https://drive.google.com/file/d/1U-XkDpxft-L1r5-AxeWHy3haNGYb2zFJ/view?usp=sharing',
+        des2: 'Fecha: 18 de Agosto',
+        des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
+        image: frutoarea,
+        ssImg1: sSingleimg1,
+        ssImg2: sSingleimg2,
+    },
+
+    {
         Id: '1',
         sImg: simg,
         sImgS: sImgS1,
@@ -30,7 +136,7 @@ const Services = [
         ssImg2: sSingleimg2,
     },
 
-     {
+    {
         Id: '1',
         sImg: simg,
         sImgS: sImgS1,
@@ -43,7 +149,7 @@ const Services = [
         ssImg1: sSingleimg1,
         ssImg2: sSingleimg2,
     },
-     {
+    {
         Id: '1',
         sImg: simg,
         sImgS: sImgS1,
@@ -56,7 +162,7 @@ const Services = [
         ssImg1: sSingleimg1,
         ssImg2: sSingleimg2,
     },
-     {
+    {
         Id: '1',
         sImg: simg,
         sImgS: sImgS1,
@@ -69,8 +175,8 @@ const Services = [
         ssImg1: sSingleimg1,
         ssImg2: sSingleimg2,
     },
-  
-     {
+
+    {
         Id: '1',
         sImg: simg,
         sImgS: sImgS1,
@@ -83,9 +189,9 @@ const Services = [
         ssImg1: sSingleimg1,
         ssImg2: sSingleimg2,
     },
-  
 
-     {
+
+    {
         Id: '1',
         sImg: simg,
         sImgS: sImgS1,
@@ -98,7 +204,7 @@ const Services = [
         ssImg1: sSingleimg1,
         ssImg2: sSingleimg2,
     },
-  
+
     {
         Id: '1',
         sImg: simg,
@@ -112,7 +218,7 @@ const Services = [
         ssImg1: sSingleimg1,
         ssImg2: sSingleimg2,
     },
-       {
+    {
         Id: '1',
         sImg: simg,
         sImgS: sImgS1,
@@ -125,7 +231,7 @@ const Services = [
         ssImg1: sSingleimg1,
         ssImg2: sSingleimg2,
     },
-       {
+    {
         Id: '12',
         sImg: simg,
         sImgS: sImgS1,
@@ -138,7 +244,7 @@ const Services = [
         ssImg1: sSingleimg1,
         ssImg2: sSingleimg2,
     },
-       {
+    {
         Id: '14',
         sImg: simg,
         sImgS: sImgS1,
@@ -151,7 +257,7 @@ const Services = [
         ssImg1: sSingleimg1,
         ssImg2: sSingleimg2,
     },
-       {
+    {
         Id: '15',
         sImg: simg,
         sImgS: sImgS1,
@@ -164,7 +270,7 @@ const Services = [
         ssImg1: sSingleimg1,
         ssImg2: sSingleimg2,
     },
-       {
+    {
         Id: '13',
         sImg: simg,
         sImgS: sImgS1,
@@ -260,7 +366,7 @@ const Services = [
         sImg: simg,
         sImgS: sImgS1,
         sTitle: 'Cápsula 5',
-        description: 'MÁS QUE UN TRAYECTO, UN DESTINO: GRACIAS POR ACOMPAÑARNOS EN ESTE VIAJE', 
+        description: 'MÁS QUE UN TRAYECTO, UN DESTINO: GRACIAS POR ACOMPAÑARNOS EN ESTE VIAJE',
         videoUrl: 'https://drive.google.com/file/d/141jW46ifuD2cvwYbhoMYDidM8OgLHmOB/view?usp=sharing',
         des2: 'Fecha: 24 de Marzo',
         des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
@@ -268,7 +374,7 @@ const Services = [
         ssImg1: sSingleimg1,
         ssImg2: sSingleimg2,
     },
-  
+
     {
         Id: '7',
         sImg: simg2,
@@ -282,7 +388,7 @@ const Services = [
         ssImg1: sSingleimg1,
         ssImg2: sSingleimg2,
     },
-  
+
     {
         Id: '8',
         sImg: simg2,
@@ -328,7 +434,7 @@ const Services = [
         sImgS: sImgS1,
         sTitle: 'Cápsula 5',
         description: 'CÓMO DAR FRUTO EN EL ÁREA DE EDUCACIÓN EN MI VIDA',
-        videoUrl: 'https://drive.google.com/file/d/1nHonNkMkpg5PGZBpXFXUeLEXlGW5CMvv/view?usp=sharing', 
+        videoUrl: 'https://drive.google.com/file/d/1nHonNkMkpg5PGZBpXFXUeLEXlGW5CMvv/view?usp=sharing',
         des2: 'Fecha: 10 de Febrero',
         des3: 'One way to categorize the activities is in terms of the professional’s area of expertise such as competitive analysis, corporate strategy the activities',
         image: frutoarea,  // Aquí puedes agregar otra imagen si es necesario.
@@ -361,8 +467,8 @@ const Services = [
         ssImg1: sSingleimg1,
         ssImg2: sSingleimg2,
     },
-  
- 
+
+
 ];
 
 export default Services;
